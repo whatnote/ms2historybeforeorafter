@@ -70,3 +70,44 @@ body {
   font-weight: bold;
   margin-top: 1.25rem;
 }
+
+/* this css below is for the html linking to teh JS deck.*/
+
+#container{
+  text-align: center;
+  background-color: #6c2d75;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+  top: 0;
+}
+
+
+#display{
+  width: 40vw;
+  min-height: 70vh;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.6);
+  text-align: center;
+  padding: 1rem;
+}
+
+#display > img{
+  width: 20rem;
+}
+
+#display > p {
+  font-size: 1.3rem;
+}
+
+
+#draw {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin: 5vh auto;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 10px;
+}
