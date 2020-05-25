@@ -5,45 +5,99 @@ h1, h2{
 }
 
 
-/* this css below is for the html linking to teh JS deck.*/
+/* this css below is for the html linking to teh JS deck.
 
 #container{
   text-align: center;
   background-color: grey;
   width: 50%;
   height: 40vh;
-  margin: 0 auto;
+  margin: 1rem;
   padding: 1rem;
   position: relative;
   top: 0;
 }
 
 
-#displayright {
-  width: 40vw;
+
+#displayright, #displayleft > p {
+  font-size: 1rem;
+}
+
+
+
+
+#displayleft {
+  width: 40%;
   min-height: 40vh;
   margin: 0 auto;
-  background-color: white;
+  background-color: blue;
   text-align: center;
   padding: 1rem;
 }
 
-#displayright > img{
+#displayright {
+  width: 40%;
+  min-height: 40vh;
+  margin: 0 auto;
+  background-color: pink;
+  text-align: center;
+  padding: 1rem;
+}
+
+*/
+
+.heading{
+    padding: 1rem;
+}
+
+#displayleft {
+  width: 80%;
+  min-height: 40vh;
+  margin: 0 auto;
+  background-color: blue;
+  text-align: center;
+  padding: 1rem;
+}
+
+#displayright {
+  width: 80%;
+  min-height: 40vh;
+  margin: 0 auto;
+  background-color: lightgray;
+  text-align: center;
+  padding: 1rem;
+}
+
+#cardbox{
+
+  text-align: center;
+  background-color: grey;
+  width: 75%;
+  height: 100%;
+   margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  top: 0;
+}
+
+
+
+
+#displayright> img{
   width: 10rem;
 }
 
-#displayright > p {
-  font-size: 1rem;
+#displayleft> img{
+  width: 10rem;
 }
 
 
 #draw, #higher, #lower{
   display: block;
   font-size: 1.5rem;
-  padding: 1rem 2rem;
-  margin: 5vh auto;
+  padding: 1rem 1rem;
+  margin: 1vh auto;
   background-color: rgba(255,255,255,0.6);
   border-radius: 10px;
 }
-
-
