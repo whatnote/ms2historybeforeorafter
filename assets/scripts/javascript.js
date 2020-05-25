@@ -22,10 +22,10 @@ function getRandom(num){
   return randomNumber;
 }
 
-document.getElementById("draw").onclick = function(){
+document.getElementById("higher").onclick = function(){
   var index = getRandom(8);
   var currentCard = deck[index];
 
-  document.getElementById("display").innerHTML = '<img src="assets/images/backofcards/' + currentCard.image + '.jpg"><h3>' + currentCard.event + '</h3><p>' + currentCard.date + '</p><p>' + currentCard.description + '</p><a href="currentCard.link' + '">Click for more Info</a>';
+  document.getElementById("displayright").innerHTML = '<img src="assets/images/backofcards/' + currentCard.image + '.jpg"><h3>' + currentCard.event + '</h3><p>' + currentCard.date + '</p><p>' + currentCard.description + '</p><a href=" +currentCard.link' + '">Click for more Info</a>';
 };
 
