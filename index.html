@@ -22,7 +22,8 @@
 
         <div class="row justify-content-center align-items-center">
             <div class="col-m-12 justify-content-center ">
-                <h2 id=score>Score 0/10</h2>
+
+                <h2>Score <span class="score" id="score">0</span>/10</h2>
             </div>
         </div>
 
@@ -35,7 +36,7 @@
                 <div id="cardbox "> 
                     <div id="displayleft justify-content-center">
                         
-
+                        <div class="number" id="current">0</div>
                         </div>
                         <button id="draw">Draw</button>
    
@@ -47,8 +48,8 @@
                                 
                     
                     </div>
-                     <button id="higher">Higher</button> <br/>
-                        <button id="lower">Lower</button>                
+                        <button class="btn" id="higher" data-value="higher">Higher</button> <br/>
+                        <button class="btn" id="lower" data-value="lower">Lower</button>                
                         
                 </div>
             </div>

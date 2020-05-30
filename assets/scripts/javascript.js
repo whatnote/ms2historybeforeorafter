@@ -23,9 +23,18 @@ function getRandom(num){
 }
 
 document.getElementById("higher").onclick = function(){
-  var index = getRandom(8);
+  var index = getRandom(7);
   var currentCard = deck[index];
 
   document.getElementById("displayright").innerHTML = '<img src="assets/images/backofcards/' + currentCard.image + '.jpg"><h3>' + currentCard.event + '</h3><p>' + currentCard.date + '</p><p>' + currentCard.description + '</p><a href=" +currentCard.link' + '">Click for more Info</a>';
 };
+
+const current_elem=document.getElementById("current");
+const btns = document.getElementById("btn");
+const result_elem = document.getElementById("result");
+const score_elem = document.getElementById("score")
+
+let lasts_number = 0
+let current_number = getRandomInt()
+let score = 0
 
