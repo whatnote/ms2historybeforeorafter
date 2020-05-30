@@ -7,6 +7,8 @@ function Card(event, date, description, link, linkDisplay, image){
     this.image = image;
 }
 
+
+//deck of cards
 var deck = [
     new Card('The Great Fire of London', 1666 ,'The Great Fire of London swept through the central parts of the English city from Sunday, 2 September to Thursday, 6 September 1666. The fire gutted the medieval City of London inside the old Roman city wall.','https://en.wikipedia.org/wiki/Great_Fire_of_London', 'click for more info', 'greatfirelondon' ),
     new Card('When was Florence Nightingale born', 1820, 'Florence Nightingale, byname Lady with the Lamp, (born May 12, 1820, Florence [Italy]—died August 13, 1910, London, England), British nurse, statistician, and social reformer who was the foundational philosopher of modern nursing.','https://www.britannica.com/biography/Florence-Nightingale','click for more info', 'nightengale' ),
@@ -17,6 +19,7 @@ var deck = [
     new Card('First female MP to sit in the UK parliament', 1919, 'The first women to take her seat was Nancy Astor (Viscountess Astor), after a by-election in December 1919. She was elected as a Conservative for the Plymouth Sutton constituency after her husband, Waldorf Astor, the former MP, was elevated to the peerage.', 'https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/womenvote/overview/womenincommons/','click for more info', 'femaleMP'),
 ];
 
+//shuffle
 function getRandom(num){
   var randomNumber = Math.floor(Math.random() * num);
   return randomNumber;
@@ -29,12 +32,88 @@ document.getElementById("higher").onclick = function(){
   document.getElementById("displayright").innerHTML = '<img src="assets/images/backofcards/' + currentCard.image + '.jpg"><h3>' + currentCard.event + '</h3><p>' + currentCard.date + '</p><p>' + currentCard.description + '</p><a href=" +currentCard.link' + '">Click for more Info</a>';
 };
 
-const current_elem=document.getElementById("current");
-const btns = document.getElementById("btn");
+const current_elem = document.getElementById("current");
+const btns = document.getElementsByClassName("btn");
 const result_elem = document.getElementById("result");
-const score_elem = document.getElementById("score")
+const score_elem = document.getElementById("score");
 
-let lasts_number = 0
-let current_number = getRandomInt()
-let score = 0
+let last_number = 0;
+let current_number = getRandomInt();
+let score = 0;
 
+current_elem.innerText = current_number;
+
+for (let i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function () {
+		PlayGame(this.dataset.value);
+	});
+}
+
+function PlayGame (choice) {
+	last_number = current_number;
+	current_number = getRandomInt();
+	current_elem.innerText = current_number;
+	
+	let comparison;
+	
+	if (last_number < current_number) {
+		comparison = "higher";
+	} else if (last_number > current_number) {
+		comparison = "lower";
+	} else {
+		comparison = "match";
+	}
+
+	if (choice == comparison) {
+		score++;
+		score_elem.innerText = score;
+		result_elem.innerText = "Correct";
+		result_elem.classList.add("correct");
+		result_elem.classList.remove("hide");
+
+		setTimeout(function () {
+			result_elem.classList.remove("correct");
+			result_elem.classList.add("hide");
+		}, 750);
+	} else if (comparison == "match") {
+		result_elem.innerText = "Match";
+		result_elem.classList.remove("hide");
+
+		setTimeout(function () {
+			result_elem.classList.add("hide");
+		}, 750);
+	} else {
+		result_elem.innerText = "Incorrect";
+		result_elem.classList.add("incorrect");
+		result_elem.classList.remove("hide");
+
+		score = 0;
+		score_elem.innerText = score;
+
+		setTimeout(function () {
+			result_elem.classList.remove("incorrect");
+			result_elem.classList.add("hide");
+		}, 750);
+	}
+}
+
+function getRandomInt () {
+	return Math.floor((Math.random() * 10));
+}
+
+
+
+
+//RANDOM Card picker
+
+function getRandom(num){
+  var randomNumber = Math.floor(Math.random() * num);
+  return randomNumber;
+}
+
+document.getElementById("higher").onclick = function(){
+  var index = getRandom(7);
+  var currentCard = deck[index];
+
+  document.getElementById("displayright").innerHTML = '<img src="assets/images/backofcards/' + currentCard.image + '.jpg"><h3>' + currentCard.event + '</h3><p>' + currentCard.date + '</p><p>' + currentCard.description + '</p><a href=" +currentCard.link' + '">Click for more Info</a>';
+};
