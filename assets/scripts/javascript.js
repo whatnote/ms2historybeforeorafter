@@ -31,4 +31,6 @@ document.getElementById("higher").onclick = function(){
 
     document.getElementById("displayright").innerHTML = '<img src="assets/images/backofcards/' + currentCard.image + '.jpg"><h3>' + currentCard.event + '</h3><p>' + currentCard.date + '</p><p>' + currentCard.description + '</p><a href=" +currentCard.link' + '">Click for more Info</a>';
     document.getElementById("datecard").innerHTML = currentCard.date;
+
+    console.log(getRandom)
 };
