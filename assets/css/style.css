@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Noto+Serif:wght@700&family=Special+Elite&display=swap" rel="stylesheet');
 
-h1, h2, p{
+h1, h2, p {
     font-family: 'Special Elite', 'Courier New', Courier, monospace; 
 }
 
+
+.start{
+    margin-top: 20px;
+      }
+
+.startcard{
+    text-align: center;
+    width: 40%;
+    height: 40vh;
+    padding: 20px;
+    
+
+}
 
 /* this css below is for the html linking to teh JS deck.
 
@@ -45,7 +58,7 @@ h1, h2, p{
   padding: 1rem;
 }
 
-*/
+
 
 .heading{
     padding: 1rem;
@@ -104,3 +117,4 @@ h1, h2, p{
   background-color: rgba(255,255,255,0.6);
   border-radius: 10px;
 }
+*/

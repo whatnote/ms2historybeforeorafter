@@ -1,3 +1,13 @@
+var message = document.getElementById('message');
+
+//start game
+function gameStart() {
+    message.innerHTML = "Game started!";
+    document.getElementById('start').style.display = 'none';
+}
+
+
+//deck of cards
 function Card(date, event, description, link, linkDisplay, image){
     this.date = date; 
     this.event = event;
@@ -19,18 +29,8 @@ var deck = [
     new Card(1919,'First female MP to sit in the UK parliament', 'The first women to take her seat was Nancy Astor (Viscountess Astor), after a by-election in December 1919. She was elected as a Conservative for the Plymouth Sutton constituency after her husband, Waldorf Astor, the former MP, was elevated to the peerage.', 'https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/womenvote/overview/womenincommons/','click for more info', 'femaleMP'),
 ];
 
-//shuffle
-function getRandom(num){
-  var randomNumber = Math.floor(Math.random() * num);
-  return randomNumber;
-}
 
-document.getElementById("higher").onclick = function(){
-    var index = getRandom(7);
-    var currentCard = deck[index];
 
-    document.getElementById("displayright").innerHTML = '<img src="assets/images/backofcards/' + currentCard.image + '.jpg"><h3>' + currentCard.event + '</h3><p>' + currentCard.date + '</p><p>' + currentCard.description + '</p><a href=" +currentCard.link' + '">Click for more Info</a>';
-    document.getElementById("datecard").innerHTML = currentCard.date;
 
-    console.log(getRandom)
-};
+
+
