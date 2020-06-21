@@ -54,6 +54,14 @@ var deck = [
     new Card(1962,'Britians First satellite is Launched', 'description', 'link','click for more info', 'picfilename'),
     new Card(1935,'Compulusary Driveing Tet is introduced', 'description', 'link','click for more info', 'picfilename'),
     new Card(2012,'The London Olympics (modern)', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1957,'The Queens first Televised Christmas Speach', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1991,'The first Briton in Space', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1994,'The channel tunnel opens', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1973,'Britain Joins EEC ', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1971,'Decimilisation of British Currency', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1605,'The Gun Powder Plot', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1912,'Captains Scotts Expedition reaches the South Pole', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1983,'The £1 coin in introduced in Britain', 'description', 'link','click for more info', 'picfilename'),
 
 ];
 
