@@ -27,8 +27,44 @@ var deck = [
     new Card(1863,'The London underground Open',  'The London Underground (also known simply as the Underground, or by its nickname the Tube) is a public rapid transit system serving London region, England and some parts of the adjacent counties of Buckinghamshire, Essex and Hertfordshire in the United Kingdom.', 'https://en.wikipedia.org/wiki/London_Underground', 'click for more info', 'londonunderground'),
     new Card(1911,'The Launch of the titanic',  'The Titanic was launched into Belfast Lough on May 31, 1911. Ten months later, it struck an iceberg and sank on its maiden voyage to New York City. The unsinkable British liner Titanic sails out of Southampton, England, at the start of its doomed voyage in 1912.', 'https://en.wikipedia.org/wiki/RMS_Titanic', 'click for more info', 'titanic'),
     new Card(1919,'First female MP to sit in the UK parliament', 'The first women to take her seat was Nancy Astor (Viscountess Astor), after a by-election in December 1919. She was elected as a Conservative for the Plymouth Sutton constituency after her husband, Waldorf Astor, the former MP, was elevated to the peerage.', 'https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/womenvote/overview/womenincommons/','click for more info', 'femaleMP'),
+    new Card(1635,'The Postal Service is Opened', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1807,'The slave trade is Abolished in Britain', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1801,'The London Stock Exchange is opened', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1928,'Women receive the same voting rights as men', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1586,'The Potato is brought to Britain', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1652,'Tea is brought the Britain', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1966,'England win the World Cup', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1895,'The National Trust is founded', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1956,'Britains first Nuclear Power statino is built', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1839,'The first Official Grand National', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1922,'The BBC is Founded', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1937,'the 999 emergency number is introduced', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1997,'The first Harry Potter book is published', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1959,'the frist motorway is completed', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1759,'the British Museum opens', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1264,'The Frist English Parliament is Held', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1348,'The Black Death (1st one)', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1215,'The Signing of the Magna Carta', 'description', 'link','click for more info', 'picfilename'),new Card(1065 ,'Event', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1065,'Westminster Abbey is Compelted', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1476,'The first printing press in Britain opens', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1086,'The Domesday Book is Compelted', 'description', 'link','click for more info', 'picfilename'),
+    new Card(122,'The Building of Hadrians walll begins', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1564,'William Shakespear is Born', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1799,'Income Tax is Introduced', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1962,'Britians First satellite is Launched', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1935,'Compulusary Driveing Tet is introduced', 'description', 'link','click for more info', 'picfilename'),
+    new Card(2012,'The London Olympics (modern)', 'description', 'link','click for more info', 'picfilename'),
+
 ];
 
+//shuffle
+function shuffle(array){
+    for(var i=array.length -1;i>0; i--){
+        var holder  =math.floor(Math.random()*(i=1))
+
+    }
+    reurn array;
+}
 
 
 
