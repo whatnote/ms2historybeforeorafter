@@ -1,6 +1,8 @@
 var message = document.getElementById('message');
 var count = 0
+var score = 0
 var cardOutput = document.getElementById('cards');
+var scoreOutput = document.getElementById('score');
 
 //start game
 function gameStart() {
@@ -9,16 +11,17 @@ function gameStart() {
     document.getElementById('highLow').style.display = 'block';
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
+    scoreOutput.innerHTML = "SCORE:" + score;
     }
 
 //highlow 
   function hilo(a){
         
         var win = false;
-        var oldCard = cards[count].cardValue;
+        var oldCard = cards[count].date;
         count++;
         cardOutput.innerHTML +=showCard();
-        var newCard = cards[count].cardValue;
+        var newCard = cards[count].date;
         if(a == 'high' && oldCard < newCard){win=true;}
         else if(a == 'low' && oldCard > newCard){win=true;}
         if(win){
@@ -26,9 +29,9 @@ function gameStart() {
           score++;
         }else {
           message.innerHTML = "You Were Wrong";
-                 
+            
         }
-      
+        scoreOutput.innerHTML = "Score:"+score;
       }
 
 //shuffle
@@ -78,10 +81,10 @@ var cards = [
     new Card(1956,'Britains first Nuclear Power statino is built', 'description', 'link','click for more info', 'picfilename'),
     new Card(1839,'The first Official Grand National', 'description', 'link','click for more info', 'picfilename'),
     new Card(1922,'The BBC is Founded', 'description', 'link','click for more info', 'picfilename'),
-    new Card(1937,'the 999 emergency number is introduced', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1937,'The 999 emergency number is introduced', 'description', 'link','click for more info', 'picfilename'),
     new Card(1997,'The first Harry Potter book is published', 'description', 'link','click for more info', 'picfilename'),
-    new Card(1959,'the frist motorway is completed', 'description', 'link','click for more info', 'picfilename'),
-    new Card(1759,'the British Museum opens', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1959,'The frist motorway is completed', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1759,'The British Museum opens', 'description', 'link','click for more info', 'picfilename'),
     new Card(1264,'The Frist English Parliament is Held', 'description', 'link','click for more info', 'picfilename'),
     new Card(1348,'The Black Death (1st one)', 'description', 'link','click for more info', 'picfilename'),
     new Card(1215,'The Signing of the Magna Carta', 'description', 'link','click for more info', 'picfilename'),new Card(1065 ,'Event', 'description', 'link','click for more info', 'picfilename'),
@@ -100,7 +103,7 @@ var cards = [
     new Card(1973,'Britain Joins EEC ', 'description', 'link','click for more info', 'picfilename'),
     new Card(1971,'Decimilisation of British Currency', 'description', 'link','click for more info', 'picfilename'),
     new Card(1605,'The Gun Powder Plot', 'description', 'link','click for more info', 'picfilename'),
-    new Card(1912,'Captains Scotts Expedition reaches the South Pole', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1912,'Captain Scotts Expedition reaches the South Pole', 'description', 'link','click for more info', 'picfilename'),
     new Card(1983,'The £1 coin in introduced in Britain', 'description', 'link','click for more info', 'picfilename'),
 
 ];
