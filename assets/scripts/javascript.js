@@ -6,9 +6,30 @@ var cardOutput = document.getElementById('cards');
 function gameStart() {
     message.innerHTML = "Game started!";
     document.getElementById('start').style.display = 'none';
+    document.getElementById('highLow').style.display = 'block';
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
     }
+
+//highlow 
+  function hilo(a){
+        
+        var win = false;
+        var oldCard = cards[count].cardValue;
+        count++;
+        cardOutput.innerHTML +=showCard();
+        var newCard = cards[count].cardValue;
+        if(a == 'high' && oldCard < newCard){win=true;}
+        else if(a == 'low' && oldCard > newCard){win=true;}
+        if(win){
+          message.innerHTML = "You Were Right!";
+          score++;
+        }else {
+          message.innerHTML = "You Were Wrong";
+                 
+        }
+      
+      }
 
 //shuffle
 function shuffleArray(array){
@@ -88,7 +109,3 @@ var cards = [
 
 
 console.log(cards)
-
-
-
-

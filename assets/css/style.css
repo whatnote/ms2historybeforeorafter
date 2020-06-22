@@ -15,8 +15,14 @@ h1, h2, p {
     height: 40vh;
     padding: 20px;
     
-
 }
+/*hides the high low buttons until game play starts. */
+ #highLow{
+        display: none;
+ }
+
+
+
 
 /* this css below is for the html linking to teh JS deck.
 
