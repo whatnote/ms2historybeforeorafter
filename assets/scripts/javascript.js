@@ -1,6 +1,7 @@
 var message = document.getElementById('message');
 var count = 0
 var score = 0
+var lives = 10
 var cardOutput = document.getElementById('cards');
 var scoreOutput = document.getElementById('score');
 
@@ -11,34 +12,42 @@ function gameStart() {
     document.getElementById('highLow').style.display = 'block';
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
-    scoreOutput.innerHTML = "SCORE:" + score;
+    scoreOutput.innerHTML = "score:" +score;
     }
 
 //highlow 
-  function hilo(a){
+function hilo(a){
+    var win = false;
+    var oldCard = cards[count].date;
+    count++;
+    cardOutput.innerHTML +=showCard();
+    var newCard = cards[count].date;
+    if(a == 'high' && oldCard < newCard){win=true;}
+    else if(a == 'low' && oldCard > newCard){win=true;}
+    if(win){
+        message.innerHTML = "You Were Right!";
+        score++;
+        lives--;
         
-        var win = false;
-        var oldCard = cards[count].date;
-        count++;
-        cardOutput.innerHTML +=showCard();
-        var newCard = cards[count].date;
-        if(a == 'high' && oldCard < newCard){win=true;}
-        else if(a == 'low' && oldCard > newCard){win=true;}
-        if(win){
-          message.innerHTML = "You Were Right!";
-          score++;
         }else {
-          message.innerHTML = "You Were Wrong";
-            
+            message.innerHTML = "You Were Wrong";
+            lives--;
+            if(lives<1){endPlay();}
         }
         scoreOutput.innerHTML = "Score:"+score;
       }
 
+function endPlay(){
+    document.getElementById('highlow').style.display ='none'
+    message.innerHTML = "game over your socre was"+score;
+
+    }
+
 //shuffle
 function shuffleArray(array){
-        for(var i = array.length -1; i >0; i--){
-            var holder = Math.floor(Math.random() *(i+1));
-            var temp = array[i];
+    for(var i = array.length -1; i >0; i--){
+        var holder = Math.floor(Math.random() *(i+1));
+        var temp = array[i];
             array[i]=array[holder];
             array[holder] = temp;
         }
@@ -87,7 +96,7 @@ var cards = [
     new Card(1759,'The British Museum opens', 'description', 'link','click for more info', 'picfilename'),
     new Card(1264,'The Frist English Parliament is Held', 'description', 'link','click for more info', 'picfilename'),
     new Card(1348,'The Black Death (1st one)', 'description', 'link','click for more info', 'picfilename'),
-    new Card(1215,'The Signing of the Magna Carta', 'description', 'link','click for more info', 'picfilename'),new Card(1065 ,'Event', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1215,'The Signing of the Magna Carta', 'description', 'link','click for more info', 'picfilename'),
     new Card(1065,'Westminster Abbey is Compelted', 'description', 'link','click for more info', 'picfilename'),
     new Card(1476,'The first printing press in Britain opens', 'description', 'link','click for more info', 'picfilename'),
     new Card(1086,'The Domesday Book is Compelted', 'description', 'link','click for more info', 'picfilename'),

@@ -17,6 +17,7 @@
             <h1>History: Higher or Lower</h1>
         </div>
     </div>
+
     <div class="row justify-content-center align-items-center " id="message">
         <div class="col-m-12 justify-content-center heading startcard" >
         <p>Welcome to Histor; Higher or Lower, you'll be presented with a series of historical events, your task is to establish if they are higher or lower than the preceeding event.</p>
@@ -24,19 +25,34 @@
         <p>Good Luck!</p>
         </div>
     </div>
+
     <div class="row justify-content-center align-items-center" id="start">
         <div class="col-m-12 justify-content-center heading">
             <button id="btnstart" type="button" onclick="gameStart()" class="btn">Play Game</button>
-        </div>
-        <div id="score"></div>
-    </div>    
-    <div id="cards"></div>
-
-    <div id="highLow"> 
-          <button id="btnhigh" type="button" onclick="hilo('high')" class="btn">High</button><br>
-          <button id="btnlow" type="button" onclick="hilo('low')" class="btn">Low</button>  
+        </div>       
     </div>
-    
+
+    <div class="row justify-content-center align-items-center" id="start">
+        <div class="col-m-12 justify-content-center">
+            <div id="score"></div>
+        </div>       
+    </div>
+   
+    <div class="row justify-content-center align-items-center start">    
+        <div class="col-m-5 justify-content-center">
+            <div id="cards"></div>
+        </div>
+
+        <div class="col-m-5 justify-content-center">
+            <div id="cards"></div>
+                <div id="highLow"> 
+                    <button id="btnhigh" type="button" onclick="hilo('high')" class="btn">High</button><br>
+                    <button id="btnlow" type="button" onclick="hilo('low')" class="btn">Low</button>  
+                </div>
+        </div>
+    </div>
+
+  
     
     </div>
 
