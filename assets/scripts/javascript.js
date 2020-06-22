@@ -1,11 +1,30 @@
 var message = document.getElementById('message');
+var count = 0
+var cardOutput = document.getElementById('cards');
 
 //start game
 function gameStart() {
     message.innerHTML = "Game started!";
     document.getElementById('start').style.display = 'none';
+    shuffleArray(cards);
+    cardOutput.innerHTML += showCard();
+    }
+
+//shuffle
+function shuffleArray(array){
+        for(var i = array.length -1; i >0; i--){
+            var holder = Math.floor(Math.random() *(i+1));
+            var temp = array[i];
+            array[i]=array[holder];
+            array[holder] = temp;
+        }
+    return array;
 }
 
+//dealing the cards
+function showCard(){
+    return '<div>'+cards[count].event+''+cards[count].date+'</div>'
+}
 
 //deck of cards
 function Card(date, event, description, link, linkDisplay, image){
@@ -19,7 +38,7 @@ function Card(date, event, description, link, linkDisplay, image){
 
 
 //deck of cards
-var deck = [
+var cards = [
     new Card(1666,'The Great Fire of London', 'The Great Fire of London swept through the central parts of the English city from Sunday, 2 September to Thursday, 6 September 1666. The fire gutted the medieval City of London inside the old Roman city wall.','https://en.wikipedia.org/wiki/Great_Fire_of_London', 'click for more info', 'greatfirelondon' ),
     new Card(1820,'When was Florence Nightingale born', 'Florence Nightingale, byname Lady with the Lamp, (born May 12, 1820, Florence [Italy]—died August 13, 1910, London, England), British nurse, statistician, and social reformer who was the foundational philosopher of modern nursing.','https://www.britannica.com/biography/Florence-Nightingale','click for more info', 'nightengale' ),
     new Card(1891,'When was First Crufts dog Show', 'The first show named Crufts - Crufts Greatest Dog Show — was held at the Royal Agricultural Hall, Islington, in 1891. It was the first at which all breeds were invited to compete, with around 2,000 dogs and almost 2,500 entries.', 'https://en.wikipedia.org/wiki/Crufts', 'click for more info', 'crufts'),
@@ -66,14 +85,9 @@ var deck = [
 ];
 
 //shuffle
-function shuffle(array){
-    for(var i=array.length -1;i>0; i--){
-        var holder  =math.floor(Math.random()*(i=1))
 
-    }
-    reurn array;
-}
 
+console.log(cards)
 
 
 
