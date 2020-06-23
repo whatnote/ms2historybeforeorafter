@@ -4,10 +4,11 @@ var score = 0
 var lives = 10
 var cardOutput = document.getElementById('cards');
 var scoreOutput = document.getElementById('score');
+var cardOutputright = document.getElementById('cardright');
 
 //start game
 function gameStart() {
-    message.innerHTML = "Game started!";
+    message.innerHTML = "<h3>Game started!</h3>";
     document.getElementById('start').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
     shuffleArray(cards);
@@ -22,24 +23,25 @@ function hilo(a){
     count++;
     cardOutput.innerHTML +=showCard();
     var newCard = cards[count].date;
+    cardOutput.innerHTML +=showCardeventonly();
     if(a == 'high' && oldCard < newCard){win=true;}
     else if(a == 'low' && oldCard > newCard){win=true;}
     if(win){
-        message.innerHTML = "You Were Right!";
+        message.innerHTML = "<h3>You Were Right!</h3>";
         score++;
         lives--;
         
         }else {
-            message.innerHTML = "You Were Wrong";
+            message.innerHTML = "<h3>You Were Wrong</h3>";
             lives--;
             if(lives<1){endPlay();}
         }
-        scoreOutput.innerHTML = "Score:"+score;
+        scoreOutput.innerHTML = "<h3>Score:</h3>"+score;
       }
 
 function endPlay(){
     document.getElementById('highlow').style.display ='none'
-    message.innerHTML = "game over your socre was"+score;
+    message.innerHTML = "<h3>game over your socre was</h3>"+score;
 
     }
 
@@ -56,7 +58,11 @@ function shuffleArray(array){
 
 //dealing the cards
 function showCard(){
-    return '<div>'+cards[count].event+''+cards[count].date+'</div>'
+    return '<div><h3>'+cards[count].event+'<br>'+cards[count].date+'<h3></div>'
+}
+//dealing the cards - card on the right
+function showCardeventonly(){
+    return '<div><p>'+cards[count].event+'</p></div>'
 }
 
 //deck of cards
