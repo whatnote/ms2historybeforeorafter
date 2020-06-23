@@ -40,7 +40,7 @@ function hilo(a){
       }
 
 function endPlay(){
-    document.getElementById('highlow').style.display ='none'
+    document.getElementById('highLow').style.display ='none'
     message.innerHTML = "<h3>game over your socre was</h3>"+score;
 
     }
