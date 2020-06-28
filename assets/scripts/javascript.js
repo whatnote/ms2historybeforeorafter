@@ -14,6 +14,7 @@ function gameStart() {
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
     scoreOutput.innerHTML = "score:" +score;
+    cardOutputevent.innerHTML +=showCardeventonly();
     }
 
 //highlow 
@@ -23,7 +24,7 @@ function hilo(a){
     count++;
     cardOutput.innerHTML +=showCard();
     var newCard = cards[count].date;
-    cardOutput.innerHTML +=showCardeventonly();
+    
     if(a == 'high' && oldCard < newCard){win=true;}
     else if(a == 'low' && oldCard > newCard){win=true;}
     if(win){
@@ -40,9 +41,9 @@ function hilo(a){
       }
 
 function endPlay(){
-    document.getElementById('highLow').style.display ='none'
-    message.innerHTML = "<h3>game over your socre was</h3>"+score;
-
+    document.getElementById('clearcards').style.display ='none';
+        message.innerHTML = "<h3>game over your socre was</h3>"+score+"<p>0-3 Maybe play again</p>"+"<p>3-7 A Student of History</p>"+"<p>7-9 A Doctor of Histroy</p>"+"<p>10 A Professor of History!</p>"; 
+ 
     }
 
 //shuffle
@@ -58,11 +59,11 @@ function shuffleArray(array){
 
 //dealing the cards
 function showCard(){
-    return '<div><h3>'+cards[count].event+'<br>'+cards[count].date+'<h3></div>'
+    return '<div><p>'+cards[count].event+'<br>'+cards[count].date+'<p></div>'
 }
 //dealing the cards - card on the right
 function showCardeventonly(){
-    return '<div><p>'+cards[count].event+'</p></div>'
+    return '<div><p>'+cards[count].event+'</p></div>';
 }
 
 //deck of cards
