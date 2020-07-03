@@ -1,10 +1,10 @@
 var message = document.getElementById('message');
 var count = 0
 var score = 0
-var lives = 10
+var lives = 9
 var cardOutput = document.getElementById('cards');
 var scoreOutput = document.getElementById('score');
-var cardOutputright = document.getElementById('cardright');
+var cardOutputEvent = document.getElementById('cardright');
 
 //start game
 function gameStart() {
@@ -14,7 +14,7 @@ function gameStart() {
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
     scoreOutput.innerHTML = "score:" +score;
-    cardOutputevent.innerHTML +=showCardeventonly();
+    cardOutputEvent.innerHTML +=showCardeventonly();
     }
 
 //highlow 
@@ -24,7 +24,8 @@ function hilo(a){
     count++;
     cardOutput.innerHTML +=showCard();
     var newCard = cards[count].date;
-    
+    cardOutputEvent.innerHTML +=showCardeventonly();
+
     if(a == 'high' && oldCard < newCard){win=true;}
     else if(a == 'low' && oldCard > newCard){win=true;}
     if(win){
@@ -42,7 +43,7 @@ function hilo(a){
 
 function endPlay(){
     document.getElementById('clearcards').style.display ='none';
-        message.innerHTML = "<h3>game over your socre was</h3>"+score+"<p>0-3 Maybe play again</p>"+"<p>3-7 A Student of History</p>"+"<p>7-9 A Doctor of Histroy</p>"+"<p>10 A Professor of History!</p>"; 
+        message.innerHTML = "<h3>game over your socre was</h3>"+score+"<p>0-3 Maybe play again</p><br>"+"<p>3-7 A Student of History</p><br>"+"<p>7-9 A Doctor of Histroy</p><br>"+"<p>10 A Professor of History!</p>"; 
  
     }
 
@@ -59,12 +60,12 @@ function shuffleArray(array){
 
 //dealing the cards
 function showCard(){
-    return '<div><p>'+cards[count].event+'<br>'+cards[count].date+'<p></div>'
+    return '<div><p>'+cards[count].event+'<br>'+cards[count].date+'<p></div>';
 }
 //dealing the cards - card on the right
 function showCardeventonly(){
     return '<div><p>'+cards[count].event+'</p></div>';
-}
+    }
 
 //deck of cards
 function Card(date, event, description, link, linkDisplay, image){

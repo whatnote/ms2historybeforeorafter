@@ -6,7 +6,7 @@ h1, h2, h3, p {
 
 
 .start{
-    margin-top: 20px;
+    margin-top: 10vh;
       }
 
 .startcard{
@@ -21,6 +21,15 @@ h1, h2, h3, p {
         display: none;
  }
 
+.historycard{
+    text-align: center;
+    width: 80%;
+    height: 40vh;
+    margin: 10%;
+    padding: 10%;
+    background-color: lightgray;
+    border-radius: 15px;
+}
 
 
 
