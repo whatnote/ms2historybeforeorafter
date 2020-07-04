@@ -43,7 +43,15 @@ function hilo(a){
 
 function endPlay(){
     document.getElementById('clearcards').style.display ='none';
-        message.innerHTML = "<h3>game over your socre was</h3>"+score+"<p>0-3 Maybe play again</p><br>"+"<p>3-7 A Student of History</p><br>"+"<p>7-9 A Doctor of Histroy</p><br>"+"<p>10 A Professor of History!</p>"; 
+        message.innerHTML = 
+        '<div class="historycard"><h3>game over your socre was</h3>'
+        +score
+        +'<p>0-3 Maybe play again</p><br>'
+        +'<p>3-7 A Student of History</p><br>'
+        +'<p>7-9 A Doctor of Histroy</p><br>'
+        +'<p>10 A Professor of History!</p></div>'
+        +'<button id="btnstart" type="button" onclick="gameStart()" class="btn">Play Game</button>'; 
+
  
     }
 
@@ -60,12 +68,23 @@ function shuffleArray(array){
 
 //dealing the cards
 function showCard(){
-    return '<div><p>'+cards[count].event+'<br>'+cards[count].date+'<p></div>';
+       return '<div id=><p>'
+       +cards[count].event+'<br>'
+       +cards[count].date
+       +'</p>'
+       +'<button id="btnstart" type="button" onclick="moreinfo()" class="btn">More Info?</button></div></div>';
 }
 //dealing the cards - card on the right
 function showCardeventonly(){
-    return '<div><p>'+cards[count].event+'</p></div>';
+    return '<div><p>'
+    +cards[count].event+'</p>'
     }
+
+
+//need a functions for the info and link
+function moreInfo(){
+
+}
 
 //deck of cards
 function Card(date, event, description, link, linkDisplay, image){
