@@ -13,7 +13,7 @@ function gameStart() {
     document.getElementById('highLow').style.display = 'block';
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
-    scoreOutput.innerHTML = "score:" +score;
+    scoreOutput.innerHTML = '<h3>Score: '+score+'</h3>';
     cardOutputEvent.innerHTML +=showCardeventonly();
     }
 
@@ -26,22 +26,24 @@ function hilo(a){
     var newCard = cards[count].date;
     cardOutputEvent.innerHTML +=showCardeventonly();
     
+    var cardclear=document.getElementById('cardtodelete');
+    cardclear.remove();
+
     if(a == 'high' && oldCard < newCard){win=true;}
     else if(a == 'low' && oldCard > newCard){win=true;}
     if(win){
         message.innerHTML = "<h3>You Were Right!</h3>";
         score++;
         lives--;
-        document.getElementById('cardtodelete').style.display ='none';
-    
+            
         }else {
             message.innerHTML = "<h3>You Were Wrong</h3>";
             lives--;
-            if(lives<1){endPlay();}
-            document.getElementById('cardtodelete').style.display ='none';
+            if(lives<1){endPlay();}          
     
         }
-        scoreOutput.innerHTML = '<h3>Score:'+score+'</h3>';
+        scoreOutput.innerHTML = '<h3>Score: '+score+'</h3>';
+      
       }
 
 function endPlay(){
@@ -54,7 +56,6 @@ function endPlay(){
         +'<p>7-9 A Doctor of Histroy</p><br>'
         +'<p>10 A Professor of History!</p><br>'
         +'<button id="btnstart" type="button" onclick="gameStart()" class="btn">Play Again</button></div>'; 
-
  
     }
 
@@ -71,12 +72,12 @@ function shuffleArray(array){
 
 //dealing the cards
 function showCard(){
-    
     return '<div id="cardtodelete"><p>'
-    +cards[count].event+'<br>'
+    +cards[count].event+'<br><br>'
     +cards[count].date
     +'</p>'
     +'<button id="btnstart" type="button" onclick="moreinfo()" class="btn">More Info?</button></div>';
+        
 }
 //dealing the cards - card on the right
 function showCardeventonly(){
