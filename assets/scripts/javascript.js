@@ -24,6 +24,8 @@ function hilo(a){
     count++;
     cardOutput.innerHTML +=showCard();
     var newCard = cards[count].date;
+
+
     cardOutputEvent.innerHTML +=showCardeventonly();
     
     var cardclear=document.getElementById('cardtodelete');
@@ -85,7 +87,7 @@ function showCard(){
 //dealing the cards - card on the right
 function showCardeventonly(){
     return '<div id="cardtodeleteright"><p>'
-    +cards[count].event+'</p>'
+    +cards[count+1].event+'</p>'
     }
 
     
