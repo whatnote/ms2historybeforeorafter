@@ -25,20 +25,23 @@ function hilo(a){
     cardOutput.innerHTML +=showCard();
     var newCard = cards[count].date;
     cardOutputEvent.innerHTML +=showCardeventonly();
-
+    
     if(a == 'high' && oldCard < newCard){win=true;}
     else if(a == 'low' && oldCard > newCard){win=true;}
     if(win){
         message.innerHTML = "<h3>You Were Right!</h3>";
         score++;
         lives--;
-        
+        document.getElementById('cardtodelete').style.display ='none';
+    
         }else {
             message.innerHTML = "<h3>You Were Wrong</h3>";
             lives--;
             if(lives<1){endPlay();}
+            document.getElementById('cardtodelete').style.display ='none';
+    
         }
-        scoreOutput.innerHTML = "<h3>Score:</h3>"+score;
+        scoreOutput.innerHTML = '<h3>Score:'+score+'</h3>';
       }
 
 function endPlay(){
@@ -49,8 +52,8 @@ function endPlay(){
         +'<p>0-3 Maybe play again</p><br>'
         +'<p>3-7 A Student of History</p><br>'
         +'<p>7-9 A Doctor of Histroy</p><br>'
-        +'<p>10 A Professor of History!</p></div>'
-        +'<button id="btnstart" type="button" onclick="gameStart()" class="btn">Play Game</button>'; 
+        +'<p>10 A Professor of History!</p><br>'
+        +'<button id="btnstart" type="button" onclick="gameStart()" class="btn">Play Again</button></div>'; 
 
  
     }
@@ -68,11 +71,12 @@ function shuffleArray(array){
 
 //dealing the cards
 function showCard(){
-       return '<div id=><p>'
-       +cards[count].event+'<br>'
-       +cards[count].date
-       +'</p>'
-       +'<button id="btnstart" type="button" onclick="moreinfo()" class="btn">More Info?</button></div></div>';
+    
+    return '<div id="cardtodelete"><p>'
+    +cards[count].event+'<br>'
+    +cards[count].date
+    +'</p>'
+    +'<button id="btnstart" type="button" onclick="moreinfo()" class="btn">More Info?</button></div>';
 }
 //dealing the cards - card on the right
 function showCardeventonly(){
@@ -80,11 +84,9 @@ function showCardeventonly(){
     +cards[count].event+'</p>'
     }
 
-
+    
 //need a functions for the info and link
-function moreInfo(){
 
-}
 
 //deck of cards
 function Card(date, event, description, link, linkDisplay, image){
