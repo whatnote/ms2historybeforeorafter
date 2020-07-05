@@ -1,7 +1,7 @@
 var message = document.getElementById('message');
 var count = 0
 var score = 0
-var lives = 9
+var moves = 10
 var cardOutput = document.getElementById('cards');
 var scoreOutput = document.getElementById('score');
 var cardOutputEvent = document.getElementById('cardright');
@@ -34,28 +34,28 @@ function hilo(a){
     var cardclear=document.getElementById('cardtodeleteright');
     cardclear.remove();
     
+    
     if(a == 'high' && oldCard < newCard){win=true;}
     else if(a == 'low' && oldCard > newCard){win=true;}
     if(win){
         message.innerHTML = "<h3>You Were Right!</h3>";
         score++;
-        lives--;
-            
+        moves--;
+        if(moves<1){endPlay(); }           
         }else {
             message.innerHTML = "<h3>You Were Wrong</h3>";
-            lives--;
-            if(lives<1){endPlay();}          
+            moves--;
+            if(moves<1){endPlay();
+            }          
     
         }
         scoreOutput.innerHTML = '<h3>Score: '+score+'</h3>';
-      
-      }
+     }
 
 function endPlay(){
     document.getElementById('clearcards').style.display ='none';
         message.innerHTML = 
-        '<div class="historycard"><h3>game over your socre was</h3>'
-        +score
+        '<div class="scorecard"><h3>GAME OVER!</h3><br><h3> Your score was '+score+'</h3><br>' 
         +'<p>0-3 Maybe play again</p><br>'
         +'<p>3-7 A Student of History</p><br>'
         +'<p>7-9 A Doctor of Histroy</p><br>'
@@ -175,8 +175,6 @@ var cards = [
     new Card(1983,'The £1 coin in introduced in Britain', 'description', 'link','click for more info', 'picfilename'),
 
 ];
-
-//shuffle
 
 
 console.log(cards)

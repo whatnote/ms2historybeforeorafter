@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Noto+Serif:wght@700&family=Special+Elite&display=swap" rel="stylesheet');
 
-h1, h2, h3, p {
+h1, h2, h3, p, btn {
     font-family: 'Special Elite', 'Courier New', Courier, monospace; 
 }
 
@@ -8,6 +8,8 @@ h1, h2, h3, p {
 .start{
     margin-top: 10vh;
       }
+
+
 
 .startcard{
     text-align: center;
@@ -23,10 +25,21 @@ h1, h2, h3, p {
 
 .historycard{
     text-align: center;
-    width: 80%;
+    width: 60%;
+    height: 50vh;
+    margin: 5%;
+    padding: 5%;
+    background-color: lightgray;
+    border-radius: 5px;
+
+}
+
+.scorecard{
+    text-align: center;
+    width: 50%;
    
-    margin: 10%;
-    padding: 10%;
+    margin: 5%;
+    padding: 5%;
     background-color: lightgray;
     border-radius: 15px;
 }
