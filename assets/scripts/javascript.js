@@ -8,6 +8,10 @@ var cardOutputEvent = document.getElementById('cardright');
 
 //start game
 function gameStart() {
+    var count = 0
+    var score = 0
+    var moves = 10
+
     message.innerHTML = "<h3>Game started!</h3>";
     document.getElementById('start').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
@@ -63,20 +67,21 @@ function endPlay(){
         +'<button id="btnstart" type="button" onclick="playAgain()" class="btn1">Play Again?</button></div>'; 
  
     }
-function playAgain(){
+
+//to restart the game
+    function playAgain() {
     var count = 0
     var score = 0
-    var moves = 10  
+    var moves = 10
 
     message.innerHTML = "<h3>Game started!</h3>";
-    document.getElementById('start').style.display = 'none';
-    document.getElementById('highLow').style.display = 'block';
+    document.getElementById('clearcards').style.display = 'block';
+    
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
     scoreOutput.innerHTML = '<h3>Score: '+score+'</h3>';
     cardOutputEvent.innerHTML +=showCardeventonly();
-}
-
+    }
 
 //shuffle
 function shuffleArray(array){

@@ -17,8 +17,9 @@ h1, h2, h3, p, .btn1 {
     color:#555555;
     display: inline-block;
     text-align: center;
-    width: 100%;
+    width: 60%;
     border: 1px solid #555555;
+    margin-top: 10px;
     
 }
 
