@@ -60,9 +60,23 @@ function endPlay(){
         +'<p>3-7 A Student of History</p><br>'
         +'<p>7-9 A Doctor of Histroy</p><br>'
         +'<p>10 A Professor of History!</p><br>'
-        +'<button id="btnstart" type="button" onclick="gameStart()" class="btn">Play Again</button></div>'; 
+        +'<button id="btnstart" type="button" onclick="playAgain()" class="btn1">Play Again?</button></div>'; 
  
     }
+function playAgain(){
+    var count = 0
+    var score = 0
+    var moves = 10  
+
+    message.innerHTML = "<h3>Game started!</h3>";
+    document.getElementById('start').style.display = 'none';
+    document.getElementById('highLow').style.display = 'block';
+    shuffleArray(cards);
+    cardOutput.innerHTML += showCard();
+    scoreOutput.innerHTML = '<h3>Score: '+score+'</h3>';
+    cardOutputEvent.innerHTML +=showCardeventonly();
+}
+
 
 //shuffle
 function shuffleArray(array){
@@ -81,7 +95,7 @@ function showCard(){
     +cards[count].event+'<br><br>'
     +cards[count].date
     +'</p>'
-    +'<button id="btnstart" type="button" onclick="moreinfo()" class="btn">More Info?</button></div>';
+    +'<button id="btnstart" type="button" onclick="moreInfo()" class="btn1">More Info?</button></div>';
         
 }
 //dealing the cards - card on the right

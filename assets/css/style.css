@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Noto+Serif:wght@700&family=Special+Elite&display=swap" rel="stylesheet');
 
-h1, h2, h3, p, btn {
-    font-family: 'Special Elite', 'Courier New', Courier, monospace; 
+h1, h2, h3, p, .btn1 {
+    font-family: 'Special Elite', 'Courier New', Courier, monospace;
+    color:#555555;
+    
 }
 
 
-.start{
+.start, .startcard{
     margin-top: 10vh;
       }
 
-
+.btn1{
+    border-radius: 5px;
+    padding:9px 20px;
+    color:#555555;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #555555;
+    
+}
 
 .startcard{
     text-align: center;
-    width: 40%;
-    height: 40vh;
+    width: 80%;
     padding: 20px;
     
 }
@@ -25,23 +35,25 @@ h1, h2, h3, p, btn {
 
 .historycard{
     text-align: center;
-    width: 60%;
+    width: 250px;
     height: 50vh;
-    margin: 5%;
-    padding: 5%;
-    background-color: lightgray;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fafafa;
     border-radius: 5px;
-
+    border: 1px solid #a5a5a5;
+    
 }
 
 .scorecard{
     text-align: center;
-    width: 50%;
-   
+    width: 50%;   
     margin: 5%;
     padding: 5%;
-    background-color: lightgray;
+    background-color: #fafafa;
     border-radius: 15px;
+    border-width: 2px;
+    border: 1px solid #a5a5a5;
 }
 
 
