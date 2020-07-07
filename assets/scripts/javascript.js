@@ -81,7 +81,7 @@ function shuffleArray(array){
 function showCard(){
     return '<div id="cardtodelete"><img src="assets/css/images/' 
     + cards[count].image 
-    + '.jpg" width="50%" class"cardpic"><p>'    
+    + '.jpg" width="50%" class="cardpic"><p>'    
     +cards[count].event+ '<br><br>'
     +cards[count].date
     +'</p><div class="popup" onclick="moreInfo()">Click for more Info<span class="popuptext" id="myPopup">'
