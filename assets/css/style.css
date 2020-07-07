@@ -1,15 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Noto+Serif:wght@700&family=Special+Elite&display=swap" rel="stylesheet');
 
-h1, h2, h3, p, .btn1 {
+h1, h2, h3, p, .btn1, .btn1a {
     font-family: 'Special Elite', 'Courier New', Courier, monospace;
     color:#555555;
-    
 }
 
+.maintitle{
+   width: 90%; 
+   padding-left: 5%;
+   padding-right: 5%;
+}
 
-.start, .startcard{
+.start {
     margin-top: 10vh;
-      }
+    }
+
+.btn1a{
+    border-radius: 5px;
+    padding:9px 20px;
+    color:#555555;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #555555;
+    margin-top: 10px;
+}
 
 .btn1{
     border-radius: 5px;
@@ -17,16 +32,16 @@ h1, h2, h3, p, .btn1 {
     color:#555555;
     display: inline-block;
     text-align: center;
-    width: 60%;
+    width: 100%;
     border: 1px solid #555555;
-    margin-top: 10px;
-    
+    margin-top: 10px;   
 }
 
 .startcard{
     text-align: center;
-    width: 80%;
+    width: 90%;
     padding: 20px;
+    margin-top: 10vh
     
 }
 /*hides the high low buttons until game play starts. */
@@ -42,8 +57,26 @@ h1, h2, h3, p, .btn1 {
     padding: 10px;
     background-color: #fafafa;
     border-radius: 5px;
+    border: 1px solid #a5a5a5;    
+}
+
+.scorecard{
+    text-align: center;
+    width: 90%;   
+    margin: 5%;
+    padding: 5%;
+    background-color: #fafafa;
+    border-radius: 15px;
+    border-width: 2px;
     border: 1px solid #a5a5a5;
-    
+}
+
+@media screen and (min-width:600px){
+  .startcard{
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    margin-top: 10vh
 }
 
 .scorecard{
@@ -56,8 +89,13 @@ h1, h2, h3, p, .btn1 {
     border-width: 2px;
     border: 1px solid #a5a5a5;
 }
+.maintitle{
+   width: 50%; 
+   padding-left: 5%;
+   padding-right: 5%;
+}
 
-
+}
 
 /* this css below is for the html linking to teh JS deck.
 
