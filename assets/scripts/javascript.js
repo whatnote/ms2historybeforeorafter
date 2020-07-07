@@ -86,6 +86,9 @@ function showCard(){
     +cards[count].date
     +'</p><div class="popup" onclick="moreInfo()">Click for more Info<span class="popuptext" id="myPopup">'
     +cards[count].description
+    +'<br><a href="'
+    + cards[count].link
+    +'" target="_blank">Link</a>'
     +'</span></div>';      
 }
 

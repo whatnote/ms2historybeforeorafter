@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Noto+Serif:wght@700&family=Special+Elite&display=swap" rel="stylesheet');
 
-h1, h2, h3, p, .btn1, .btn1a {
+h1, h2, h3, p, .btn1, .btn1a, .popuptext {
     font-family: 'Special Elite', 'Courier New', Courier, monospace;
     color:#555555;
 }
@@ -17,24 +17,24 @@ h1, h2, h3, p, .btn1, .btn1a {
 
 .btn1a{
     border-radius: 5px;
-    padding:9px 20px;
+    padding:9px 10px;
     color:#555555;
     display: inline-block;
     text-align: center;
     width: 100%;
     border: 1px solid #555555;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .btn1{
     border-radius: 5px;
-    padding:9px 20px;
+    padding:9px 10px;
     color:#555555;
     display: inline-block;
     text-align: center;
     width: 100%;
     border: 1px solid #555555;
-    margin-top: 10px;   
+    margin-top: 5px;   
 }
 
 .startcard{
@@ -71,18 +71,6 @@ h1, h2, h3, p, .btn1, .btn1a {
     border: 1px solid #a5a5a5;
 }
 
-.infocard{
-    text-align: center;
-    width: 250px;
-    height: 50vh;
-    margin: 20px;
-    padding: 10px;
-    background-color: #fafafa;
-    border-radius: 5px;
-    border: 1px solid #a5a5a5;    
-
-}
-
 .cardpic{
     border-radius: 5px;
 }
@@ -101,11 +89,11 @@ h1, h2, h3, p, .btn1, .btn1a {
 /* The actual popup */
 .popup .popuptext {
   visibility: hidden;
-  width: 160px;
+   width: 220px;
   background-color: #555;
   color: #fff;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 5px;
   padding: 8px 0;
   position: absolute;
   z-index: 1;
@@ -169,104 +157,3 @@ h1, h2, h3, p, .btn1, .btn1a {
 }
 
 }
-
-/* this css below is for the html linking to teh JS deck.
-
-#container{
-  text-align: center;
-  background-color: grey;
-  width: 50%;
-  height: 40vh;
-  margin: 1rem;
-  padding: 1rem;
-  position: relative;
-  top: 0;
-}
-
-
-
-#displayright, #displayleft > p {
-  font-size: 1rem;
-}
-
-
-
-
-#displayleft {
-  width: 40%;
-  min-height: 40vh;
-  margin: 0 auto;
-  background-color: blue;
-  text-align: center;
-  padding: 1rem;
-}
-
-#displayright {
-  width: 40%;
-  min-height: 40vh;
-  margin: 0 auto;
-  background-color: pink;
-  text-align: center;
-  padding: 1rem;
-}
-
-
-
-.heading{
-    padding: 1rem;
-}
-
-#displayleft {
-  width: 80%;
-  min-height: 40vh;
-  margin: 0 auto;
-  background-color: blue;
-  text-align: center;
-  padding: 1rem;
-}
-
-#displayright {
-  width: 80%;
-  min-height: 40vh;
-  margin: 0 auto;
-  background-color: lightgray;
-  text-align: center;
-  padding: 1rem;
-}
-
-#cardbox{
-
-  text-align: center;
-  background-color: grey;
-  width: 75%;
-  height: 100%;
-   margin: 1rem;
-  padding: 1rem;
-  position: relative;
-  top: 0;
-}
-
-
-
-
-#displayright> img{
-    width: 10rem;
-    height: 12.5rem;
-}
-
-#displayleft> img{
-    width: 10rem;
-    height: 12.5rem;
-}
-
-
-
-#draw, #higher, #lower{
-  display: block;
-  font-size: 1.5rem;
-  padding: 1rem 1rem;
-  margin: 1vh auto;
-  background-color: rgba(255,255,255,0.6);
-  border-radius: 10px;
-}
-*/
