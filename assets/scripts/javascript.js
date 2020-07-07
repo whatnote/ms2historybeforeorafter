@@ -15,6 +15,7 @@ function gameStart() {
     message.innerHTML = "<h3>Game started!</h3>";
     document.getElementById('start').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
+    document.getElementById('cards').style.display = 'block';
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
     scoreOutput.innerHTML = '<h3>Score: '+score+'</h3>';
@@ -29,7 +30,6 @@ function hilo(a){
     cardOutput.innerHTML +=showCard();
     var newCard = cards[count].date;
 
-
     cardOutputEvent.innerHTML +=showCardeventonly();
     
     var cardclear=document.getElementById('cardtodelete');
@@ -37,8 +37,7 @@ function hilo(a){
 
     var cardclear=document.getElementById('cardtodeleteright');
     cardclear.remove();
-    
-    
+        
     if(a == 'high' && oldCard < newCard){win=true;}
     else if(a == 'low' && oldCard > newCard){win=true;}
     if(win){
@@ -51,7 +50,6 @@ function hilo(a){
             moves--;
             if(moves<1){endPlay();
             }          
-    
         }
         scoreOutput.innerHTML = '<h3>Score: '+score+'</h3>';
      }
@@ -64,24 +62,8 @@ function endPlay(){
         +'<p>3-7 A Student of History</p><br>'
         +'<p>7-9 A Doctor of Histroy</p><br>'
         +'<p>10 A Professor of History!</p><br>'
-        +'<button id="btnstart" type="button" onclick="playAgain()" class="btn1">Play Again?</button></div>'; 
- 
-    }
-
-//to restart the game
-    function playAgain() {
-    var count = 0
-    var score = 0
-    var moves = 10
-
-    message.innerHTML = "<h3>Game started!</h3>";
-    document.getElementById('clearcards').style.display = 'block';
-    
-    shuffleArray(cards);
-    cardOutput.innerHTML += showCard();
-    scoreOutput.innerHTML = '<h3>Score: '+score+'</h3>';
-    cardOutputEvent.innerHTML +=showCardeventonly();
-    }
+        +'<button id="btnstart" type="button" onclick="gameStart()" class="btn1">Play Again?</button></div>'; 
+     }
 
 //shuffle
 function shuffleArray(array){
@@ -92,26 +74,34 @@ function shuffleArray(array){
             array[holder] = temp;
         }
     return array;
+    console.log(array)
 }
 
 //dealing the cards
 function showCard(){
-    return '<div id="cardtodelete"><p>'
-    +cards[count].event+'<br><br>'
+    return '<div id="cardtodelete"><img src="assets/css/images/' 
+    + cards[count].image 
+    + '.jpg" width="50%" class"cardpic"><p>'    
+    +cards[count].event+ '<br><br>'
     +cards[count].date
-    +'</p>'
-    +'<button id="btnstart" type="button" onclick="moreInfo()" class="btn1">More Info?</button></div>';
-        
+    +'</p><div class="popup" onclick="moreInfo()">Click for more Info<span class="popuptext" id="myPopup">'
+    +cards[count].description
+    +'</span></div>';      
 }
+
+function moreInfo() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup for the pop up
+
 //dealing the cards - card on the right
 function showCardeventonly(){
     return '<div id="cardtodeleteright"><p>'
     +cards[count+1].event+'</p>'
     }
-
-    
-//need a functions for the info and link
-
 
 //deck of cards
 function Card(date, event, description, link, linkDisplay, image){
@@ -122,7 +112,6 @@ function Card(date, event, description, link, linkDisplay, image){
     this.linkDisplay = linkDisplay;
     this.image = image;
 }
-
 
 //deck of cards
 var cards = [
@@ -196,4 +185,3 @@ var cards = [
 ];
 
 
-console.log(cards)
