@@ -104,7 +104,7 @@ function moreInfo() {
 function showCardeventonly(){
     return '<div id="cardtodeleteright"><p><img src="assets/css/images/' 
     + cards[count+1].image 
-    + '.jpg" width="50%" class="cardpic"><p>'    
+    + '.jpg" class="cardpic"><p>'    
     +cards[count+1].event+'</p>'
     }
 

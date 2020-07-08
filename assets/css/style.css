@@ -5,6 +5,10 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
     color:#555555;
 }
 
+ h2, h3, p, .btn1, .btn1a, .popuptext{
+     font-size: 12px;
+ }
+
 .maintitle{
    width: 90%; 
    padding-left: 5%;
@@ -12,7 +16,8 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
 }
 
 .start {
-    margin-top: 10vh;
+    margin-top: 10px;
+    
     }
 
 .btn1a{
@@ -24,7 +29,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
     width: 100%;
     border: 1px solid #555555;
     margin-top: 5px;
-}4
+}
 
 .btn1{
     border-radius: 5px;
@@ -40,8 +45,8 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
 .startcard{
     text-align: center;
     width: 90%;
-    padding: 20px;
-    margin-top: 10vh
+    padding: 5px;
+    margin-top: 0px;
     
 }
 /*hides the high low buttons until game play starts. */
@@ -53,8 +58,8 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
     text-align: center;
     width: 250px;
     height: 50vh;
-    margin: 20px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     background-color: #fafafa;
     border-radius: 5px;
     border: 1px solid #a5a5a5;    
@@ -63,8 +68,8 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
 .scorecard{
     text-align: center;
     width: 90%;   
-    margin: 5%;
-    padding: 5%;
+    margin: 5px;
+    padding: 5px;
     background-color: #fafafa;
     border-radius: 15px;
     border-width: 2px;
@@ -73,6 +78,10 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
 
 .cardpic{
     border-radius: 5px;
+    width: 50% ;
+    height:334 px ;
+    padding: 10px;
+
 }
 
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup */
@@ -136,8 +145,8 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
   .startcard{
     text-align: center;
     width: 50%;
-    padding: 20px;
-    margin-top: 10vh
+    padding: 10px;
+    margin-top: 5px;
 }
 
 .scorecard{
