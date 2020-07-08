@@ -104,7 +104,7 @@ function moreInfo() {
 function showCardeventonly(){
     return '<div id="cardtodeleteright"><p><img src="assets/css/images/' 
     + cards[count+1].image 
-    + '.jpg" width="50%" class"cardpic"><p>'    
+    + '.jpg" width="50%" class="cardpic"><p>'    
     +cards[count+1].event+'</p>'
     }
 
@@ -133,7 +133,7 @@ var cards = [
         'Florence Nightingale, byname Lady with the Lamp, (born May 12, 1820, Florence [Italy]—died August 13, 1910, London, England), British nurse, statistician, and social reformer who was the foundational philosopher of modern nursing.',
         'https://www.britannica.com/biography/Florence-Nightingale',
         'click for more info', 
-        'nightengale' ),
+        'nightingale' ),
     new Card(
         1891,
         'When was First Crufts dog Show', 
@@ -148,6 +148,20 @@ var cards = [
         'https://en.wikipedia.org/wiki/On_the_Origin_of_Species', 
         'click for more info', 
         'darwin'),
+     new Card(
+        1516,
+        'The Postal Service Opened', 
+        'The Royal Mail can trace its history back to 1516, when Henry VIII established a "Master of the Posts", a position that was renamed "Postmaster General" in 1710', 
+        'https://en.wikipedia.org/wiki/Royal_Mail#:~:text=One%20of%20his%20first%20acts,being%20paid%20by%20the%20recipient.',
+        'click for more info',
+        'Royal_Mail'),
+   new Card (
+        1571,
+        'The London Stock Exchange is opened', 
+        'The Royal Exchange had been founded by English financier Thomas Gresham and Sir Richard Clough on the model of the Antwerp Bourse. It was opened by Elizabeth I of England in 1571', 
+        'https://en.wikipedia.org/wiki/London_Stock_Exchange',
+        'click for more info',
+        'New_Stock_Exchange'),    
     new Card(1863,'The London underground Open',  'The London Underground (also known simply as the Underground, or by its nickname the Tube) is a public rapid transit system serving London region, England and some parts of the adjacent counties of Buckinghamshire, Essex and Hertfordshire in the United Kingdom.', 'https://en.wikipedia.org/wiki/London_Underground', 'click for more info', 'londonunderground'),
     new Card(1911,'The Launch of the titanic',  'The Titanic was launched into Belfast Lough on May 31, 1911. Ten months later, it struck an iceberg and sank on its maiden voyage to New York City. The unsinkable British liner Titanic sails out of Southampton, England, at the start of its doomed voyage in 1912.', 'https://en.wikipedia.org/wiki/RMS_Titanic', 'click for more info', 'titanic'),
     new Card(1919,'First female MP to sit in the UK parliament', 'The first women to take her seat was Nancy Astor (Viscountess Astor), after a by-election in December 1919. She was elected as a Conservative for the Plymouth Sutton constituency after her husband, Waldorf Astor, the former MP, was elevated to the peerage.', 'https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/womenvote/overview/womenincommons/','click for more info', 'femaleMP'),
