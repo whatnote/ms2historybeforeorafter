@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Noto+Serif:wght@700&family=Special+Elite&display=swap" rel="stylesheet');
 
-h1, h2, h3, p, .btn1, .btn1a, .popuptext {
+h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     font-family: 'Special Elite', 'Courier New', Courier, monospace;
     color:#555555;
 }
 
  h2, h3, p, .btn1, .btn1a, .popuptext{
-     font-size: 12px;
+     font-size: 14px;
  }
 
 .maintitle{
@@ -37,7 +37,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
     color:#555555;
     display: inline-block;
     text-align: center;
-    width: 100%;
+    width: 60%;
     border: 1px solid #555555;
     margin-top: 5px;   
 }
@@ -54,10 +54,14 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
         display: none;
  }
 
+ #cards{
+        display: none;
+ }
+
 .historycard{
     text-align: center;
     width: 250px;
-    height: 50vh;
+    height:300px ;
     margin: 5px;
     padding: 5px;
     background-color: #fafafa;
@@ -68,8 +72,8 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
 .scorecard{
     text-align: center;
     width: 90%;   
-    margin: 5px;
-    padding: 5px;
+    margin: 10px;
+    padding: 10px;
     background-color: #fafafa;
     border-radius: 15px;
     border-width: 2px;
@@ -79,7 +83,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
 .cardpic{
     border-radius: 5px;
     width: 50% ;
-    height:334 px ;
+    height:334 px;
     padding: 10px;
 
 }
@@ -98,7 +102,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext {
 /* The actual popup */
 .popup .popuptext {
   visibility: hidden;
-   width: 220px;
+  width: 220px;
   background-color: #555;
   color: #fff;
   text-align: center;

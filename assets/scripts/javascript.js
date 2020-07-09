@@ -13,13 +13,16 @@ function gameStart() {
     var moves = 10
 
     message.innerHTML = "<h3>Game started!</h3>";
+
     document.getElementById('start').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('cards').style.display = 'block';
+    
     shuffleArray(cards);
     cardOutput.innerHTML += showCard();
     scoreOutput.innerHTML = '<h3>Score: '+score+'</h3>';
     cardOutputEvent.innerHTML +=showCardeventonly();
+    
     }
 
 //highlow 
@@ -305,71 +308,130 @@ var cards = [
     
     new Card(1476,
         'The first printing press in Britain opens', 
-        'description', 
-        'link',
+        'William Caxton (c. 1422 – c. 1491) was an English merchant, diplomat, and writer. He is thought to be the first person to introduce a printing press into England, in 1476, and as a printer was the first English retailer of printed books.', 
+        'https://en.wikipedia.org/wiki/William_Caxton#:~:text=William%20Caxton%20(c.,English%20retailer%20of%20printed%20books.',
         'click for more info', 
-        'picfilename'),
+        'printingpress'),
     
     new Card(1086,
-        'The Domesday Book is Compelted', 
-        'description', 
-        'link',
+        'The Domesday Book is completed', 
+        'Domesday Book Latin: Liber de Wintonia "Book of Winchester") is a manuscript record of the "Great Survey" of much of England and parts of Wales completed in 1086 by order of King William the Conqueror. ', 
+        'https://en.wikipedia.org/wiki/Domesday_Book#:~:text=Domesday%20Book%20(%2F%CB%88du%CB%90,of%20King%20William%20the%20Conqueror.',
         'click for more info', 
-        'picfilename'),
+        'domesdaybook'),
     
     new Card(122,
-        'The Building of Hadrians walll begins', 
-        'description', 
-        'link',
+        'The building of Hadrians walll begins', 
+        'It was built by the Roman army on the orders of the emperor Hadrian following his visit to Britain in AD 122.', 
+        'https://www.english-heritage.org.uk/visit/places/hadrians-wall/hadrians-wall-history-and-stories/history/#:~:text=It%20was%20built%20by%20the,on%2DSolway%20in%20the%20west.',
         'click for more info', 
-        'picfilename'),
+        'hadrianswall'),
     
     new Card(1564,
-        'William Shakespear is Born', 'description', 'link','click for more info', 'picfilename'),
+        'William Shakespear is Born', 
+        'William Shakespeare (bapt. 26 April 1564 – 23 April 1616) was an English playwright, poet, and actor, widely regarded as the greatest writer in the English language and the worlds greatest dramatist.', 
+        'lhttps://en.wikipedia.org/wiki/William_Shakespeareink',
+        'click for more info', 
+        'shakespear'),
     
     new Card(1799,
-        'Income Tax is Introduced', 'description', 'link','click for more info', 'picfilename'),
+        'Income Tax is Introduced', 
+        'Income Tax was the first tax in British history to be levied directly on peoples earnings. It was introduced in 1799 by the then Prime Minister William Pitt the Younger, as a temporary measure to cover the cost of the Napoleonic Wars.',
+        'https://www.politics.co.uk/reference/income-tax#:~:text=Income%20Tax%20rose%20dramatically%20in,%22Super%20Tax%22%20was%20introduced.',
+        'click for more info',
+        'incometax'),
     
     new Card(1962,
-        'Britians First satellite is Launched', 'description', 'link','click for more info', 'picfilename'),
+        'Britians First satellite is Launched',
+        'Although Prospero was the first British satellite to have been launched successfully by a British rocket, the first British satellite placed in orbit was Ariel 1, launched in April 1962 on a U.S. rocket.', 
+        'https://en.wikipedia.org/wiki/Prospero_(satellite)#:~:text=Although%20Prospero%20was%20the%20first,1962%20on%20a%20U.S.%20rocket.',
+        'click for more info',
+        'satellite'),
     
-    new Card(1935,
-        'Compulusary Driveing Tet is introduced', 'description', 'link','click for more info', 'picfilename'),
+    new Card(1934,
+        'Compulsory driving Test is introduced',
+        'Legislation for compulsory testing was introduced for all new drivers with the Road Traffic Act 1934.', 
+        'https://en.wikipedia.org/wiki/United_Kingdom_driving_test#:~:text=Legislation%20for%20compulsory%20testing%20was,to%20have%20passed%20the%20test.',
+        'click for more info', 
+        'drivingtest'),
     
     new Card(2012,
-        'The London Olympics (modern)', 'description', 'link','click for more info', 'picfilename'),
+        'The London Olympics (modern)', 
+        'The 2012 Summer Olympics commonly known as London 2012, was an international multi-sport event that was held from 27 July to 12 August 2012 in London, United Kingdom. ',
+        'https://en.wikipedia.org/wiki/2012_Summer_Olympics',
+        'click for more info', 
+        'olympics'),
     
     new Card(1957,
-        'The Queens first Televised Christmas Speach', 'description', 'link','click for more info', 'picfilename'),
+        'The Queens first Televised Christmas Speech', 
+        'The Queens Christmas Message is a broadcast made by the sovereign of the Commonwealth realms to the Commonwealth of Nations each Christmas.', 
+        'https://en.wikipedia.org/wiki/Royal_Christmas_Message',
+        'click for more info', 
+        'queenspeech'),
     
     new Card(1991,
-        'The first Briton in Space', 'description', 'link','click for more info', 'picfilename'),
+        'The first Briton in Space', 
+        'Helen Sharman, a 26-year-old food chemist, who became the first Briton in space after she answered a radio advert simply stating: “Astronaut wanted, no experience necessary.”', 
+        'https://www.fourpure.com/blog/helen-sharman-the-first-brit-in-space#:~:text=Take%20Helen%20Sharman%2C%20a%2026,wanted%2C%20no%20experience%20necessary.%E2%80%9D',
+        'click for more info', 
+        'shama'),
     
     new Card(1994,
         'The channel tunnel opens', 
-        'description', 'link','click for more info', 'picfilename'),
+        'The Channel Tunnel (French: Le tunnel sous la Manche), also referred to as the Chunnel, is a 50.45-kilometre (31.35 mi) railway tunnel that connects Folkestone (Kent, England) with Coquelles (Pas-de-Calais, France), beneath the English Channel at the Strait of Dover', 
+        'https://en.wikipedia.org/wiki/Channel_Tunnel',
+        'click for more info',
+        'tunnel'),
     
     new Card(1973,
         'Britain Joins EEC ', 
-        'description', 'link','click for more info', 'picfilename'),
+        'The Accession of the United Kingdom to the European Communities (EC) – the collective term for the European Coal and Steel Community (ECSC), the European Economic Community (EEC) and the European Atomic Energy Community (EAEC) – took effect on 1 January 1973.', 
+        'https://en.wikipedia.org/wiki/Accession_of_the_United_Kingdom_to_the_European_Communities',
+        'click for more info', 
+        'ukeec'),
     
     new Card(1971,
-        'Decimilisation of British Currency', 
-        'description', 'link','click for more info', 'picfilename'),
+        'Decimalisation of British Currency', 
+        'On 14 February that year, there were 12 pennies to the shilling and 20 shillings to the pound. The following day all that was history and the pound was made up of 100 new pence.', 
+        'https://www.bbc.co.uk/news/business-12346083#:~:text=If%20you%20do%2C%20you%20must,20%20shillings%20to%20the%20pound.',
+        'click for more info',
+        'oldmoney'),
     
     new Card(1605,
-        'The Gun Powder Plot', 
-        'description', 'link','click for more info', 'picfilename'),
+        'The Gunpowder Plot', 
+        'The Gunpowder Plot of 1605, in earlier centuries often called the Gunpowder Treason Plot or the Jesuit Treason, was a failed assassination attempt against King James I by a group of provincial English Catholics led by Robert Catesby.', 
+        'https://en.wikipedia.org/wiki/Gunpowder_Plot',
+        'click for more info', 
+        'gunpowder'),
     
-    new Card(1912,
+        new Card(1912,
         'Captain Scotts Expedition reaches the South Pole', 
-        'description', 'link','click for more info', 'picfilename'),
+        'description',
+        'link',
+        'click for more info',
+        'picfilename'),
     
-    new Card(1983,
+         new Card(1983,
+        'The New £1 coin in introduced in Britain', 
+        'The old style £1 coin was introduced in 1983 to replace the Bank of England £1 note, which remained in circulation alongside the coins until 1988. Many different reverse designs were used on the original £1 coin, alternating design themes each year for the UK, Scotland, Wales, Northern Ireland and England.', 
+        'https://en.wikipedia.org/wiki/One_pound_(British_coin)',
+        'click for more info', 
+        'Oldonepound'),
+
+        new Card(2017,
+        'The £1 coin in introduced in Britain', 
+        'A new, dodecagonal (12-sided) design of coin was introduced on 28 March 2017 and both new and old versions of the one pound coin circulated together until the older design was withdrawn from circulation on 15 October 2017.', 
+        'https://en.wikipedia.org/wiki/One_pound_(British_coin)',
+        'click for more info', 
+        'newpoundcoin'),
+        
+        /* CArd layout 
+        new Card(1983,
         'The £1 coin in introduced in Britain', 
         'description', 
         'link',
-        'click for more info', 'picfilename'),
+        'click for more info', 
+        'pic'),*/
 
 ];
 
