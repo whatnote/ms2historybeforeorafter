@@ -8,9 +8,9 @@ var cardOutputEvent = document.getElementById('cardright');
 
 //start game
 function gameStart() {
-    var count = 0
-    var score = 0
-    var moves = 10
+    count = 0
+    score = 0
+    moves = 10
 
     message.innerHTML = "<h3>Game started!</h3>";
 
@@ -19,9 +19,12 @@ function gameStart() {
     document.getElementById('cards').style.display = 'block';
     
     shuffleArray(cards);
+    cardOutput.innerHTML ="";
     cardOutput.innerHTML += showCard();
     scoreOutput.innerHTML = '<h3>Score: '+score+'</h3>';
+    cardOutputEvent.innerHTML ="";
     cardOutputEvent.innerHTML +=showCardeventonly();
+    document.getElementById('clearcards').style.display ='block';
     
     }
 
