@@ -196,9 +196,9 @@ var cards = [
     new Card(
         1928,
         'Women receive the same voting rights as men', 
-        'It was not until the Equal Franchise Act of 1928 that women over 21 were able to vote and women finally achieved the same voting rights as men. This act increased the number of women eligible to vote to 15 million.', 'link',
-        'click for more info',
+        'It was not until the Equal Franchise Act of 1928 that women over 21 were able to vote and women finally achieved the same voting rights as men. This act increased the number of women eligible to vote to 15 million.', 
         'https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/womenvote/case-study-the-right-to-vote/the-right-to-vote/birmingham-and-the-equal-franchise/1928-equal-franchise-act/1928-equal-franchise-act-first-page/', 
+        'click for more info',             
         'womenvote'),
 
     new Card(1586,
@@ -209,7 +209,7 @@ var cards = [
         'potato'),
     
     new Card(1652,
-        'Tea is bought the Britain', 
+        'Tea is brought to the Britain', 
         'description', 
         'https://www.tea.co.uk/history-of-tea',
         'click for more info', 
@@ -265,7 +265,7 @@ var cards = [
         'harrypotter'),
     
     new Card(1959,
-        'The first motorway is completed', 
+        'The first UK Motorway is completed', 
         'The first section of motorway was the Preston Bypass in Lancashire, now part of the M6 motorway, which opened in 1958.[3] The M1 was Britains first full-length motorway and opened in 1959. The early M1 had no speed limits, no central reservation or crash barriers, and no lighting.', 
         'https://en.wikipedia.org/wiki/M1_motorway#:~:text=The%20first%20section%20of%20motorway,motorway%20and%20opened%20in%201959.',
         'click for more info', 

@@ -6,7 +6,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 }
 
  h2, h3, p, .btn1, .btn1a, .popuptext{
-     font-size: 14px;
+     font-size: 13px;
  }
 
 .maintitle{
@@ -82,7 +82,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 
 .cardpic{
     border-radius: 15px;
-    width: 50%;
+    height: 130px;
     padding: 10px;
 
 }
