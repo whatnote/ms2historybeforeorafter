@@ -5,7 +5,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     color:#555555;
 }
 
- h2, h3, p, .btn1, .btn1a, .popuptext{
+h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
      font-size: 13px;
  }
 
@@ -31,7 +31,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     margin-top: 5px;
 }
 
-.btn1{
+.btn1, .popup{
     border-radius: 5px;
     padding:9px 10px;
     color:#555555;
