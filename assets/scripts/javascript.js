@@ -133,13 +133,13 @@ var cards = [
     new Card(
         1820,
         'When was Florence Nightingale born', 
-        'Florence Nightingale, byname Lady with the Lamp, (born May 12, 1820, Florence [Italy]—died August 13, 1910, London, England), British nurse, statistician, and social reformer who was the foundational philosopher of modern nursing.',
+        'Florence Nightingale, known as The Lady with the Lamp, (born May 12, 1820, Florence [Italy]—died August 13, 1910, London, England), British nurse, statistician, and social reformer who was the foundational philosopher of modern nursing.',
         'https://www.britannica.com/biography/Florence-Nightingale',
         'click for more info', 
         'nightingale' ),
     new Card(
         1891,
-        'When was First Crufts dog Show', 
+        'When was the first Crufts dog Show', 
         'The first show named Crufts - Crufts Greatest Dog Show — was held at the Royal Agricultural Hall, Islington, in 1891. It was the first at which all breeds were invited to compete, with around 2,000 dogs and almost 2,500 entries.',
         'https://en.wikipedia.org/wiki/Crufts', 
         'click for more info',
@@ -147,7 +147,7 @@ var cards = [
 
     new Card(
         1859,
-        'Charles Darwin’s theory of Evolution is published',  
+        'Charles Darwin’s theory of Evolution was published',  
         'On the Origin of Species (or, more completely, On the Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life), published on 24 November 1859, is a work of scientific literature by Charles Darwin which is considered to be the foundation of evolutionary biology.',
         'https://en.wikipedia.org/wiki/On_the_Origin_of_Species', 
         'click for more info', 
@@ -179,7 +179,7 @@ var cards = [
 
     new Card(
         1911,
-        'The Launch of the titanic',
+        'The launch of the Titanic',
         'The Titanic was launched into Belfast Lough on May 31, 1911. Ten months later, it struck an iceberg and sank on its maiden voyage to New York City. The unsinkable British liner Titanic sails out of Southampton, England, at the start of its doomed voyage in 1912.', 
         'https://en.wikipedia.org/wiki/RMS_Titanic', 
         'click for more info', 
@@ -195,7 +195,7 @@ var cards = [
 
     new Card(
         1928,
-        'Women receive the same voting rights as men', 
+        'Women received the same voting rights as men', 
         'It was not until the Equal Franchise Act of 1928 that women over 21 were able to vote and women finally achieved the same voting rights as men. This act increased the number of women eligible to vote to 15 million.', 
         'https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/womenvote/case-study-the-right-to-vote/the-right-to-vote/birmingham-and-the-equal-franchise/1928-equal-franchise-act/1928-equal-franchise-act-first-page/', 
         'click for more info',             
@@ -252,7 +252,7 @@ var cards = [
     
     new Card(1937,
         'The 999 emergency number is introduced', 
-        'First introduced in the London area on 30 June 1937, the UKs 999 number is the worlds oldest emergency call telephone service. ', 
+        'First introduced in the London area on 30 June 1937, the UKs 999 number is the world’s oldest emergency call telephone service. ', 
         'https://en.wikipedia.org/wiki/999_(emergency_telephone_number)#:~:text=First%20introduced%20in%20the%20London,which%20five%20women%20were%20killed.', 
         'click for more info', 
         '999'),
@@ -266,21 +266,21 @@ var cards = [
     
     new Card(1959,
         'The first UK Motorway is completed', 
-        'The first section of motorway was the Preston Bypass in Lancashire, now part of the M6 motorway, which opened in 1958.[3] The M1 was Britains first full-length motorway and opened in 1959. The early M1 had no speed limits, no central reservation or crash barriers, and no lighting.', 
+        'The first section of motorway was the Preston Bypass in Lancashire, now part of the M6 motorway, which opened in 1958. The M1 was Britains first full-length motorway and opened in 1959. The early M1 had no speed limits, no central reservation or crash barriers, and no lighting.', 
         'https://en.wikipedia.org/wiki/M1_motorway#:~:text=The%20first%20section%20of%20motorway,motorway%20and%20opened%20in%201959.',
         'click for more info', 
         'motorway'),
     
     new Card(1759,
         'The British Museum opens', 
-        'descThe British Museum was founded in 1753 and opened its doors in 1759. It was the first national museum to cover all fields of human knowledge, open to visitors from across the world.ription', 
+        'The British Museum was founded in 1753 and opened it’s doors in 1759. It was the first national museum to cover all fields of human knowledge, open to visitors from across the world.', 
         'https://www.britishmuseum.org/about-us/british-museum-story',
         'click for more info', 
         'britishmuseum'),
     
     new Card(1264,
         'The first English Parliament is Held', 
-        'Simon de Montforts parliament of 1265 is sometimes referred to as the first representative English parliament, because of its inclusion of both the knights and the burgesses, and Montfort himself is often regarded as the founder of the House of Common', 
+        'Simon de Montfort’s parliament of 1265 is sometimes referred to as the first representative English parliament, because of its inclusion of both the knights and the burgesses, and Montfort himself is often regarded as the founder of the House of Common', 
         'https://en.wikipedia.org/wiki/Parliament_of_England',
         'click for more info', 
         'firstparliment'),
@@ -301,7 +301,7 @@ var cards = [
     
     new Card(1065,
         'Westminster Abbey is completed', 
-        ' It was the first church in England built in the Romanesque style. The building was completed around 1060 and was consecrated on 28 December 1065, only a week before Edwards death on 5 January 1066.', 
+        'It was the first church in England built in the Romanesque style. The building was completed around 1060 and was consecrated on 28 December 1065, only a week before Edwards death on 5 January 1066.', 
         'https://en.wikipedia.org/wiki/Westminster_Abbey#:~:text=It%20was%20the%20first%20church,Edith%20was%20buried%20alongside%20him.',
         'click for more info',
         'westminsterabbey'),
@@ -321,8 +321,8 @@ var cards = [
         'domesdaybook'),
     
     new Card(122,
-        'The building of Hadrians walll begins', 
-        'It was built by the Roman army on the orders of the emperor Hadrian following his visit to Britain in AD 122.', 
+        'The building of Hadrian’s walll begins', 
+        'It was built by the Roman army on the orders of the emperor, Hadrian, following his visit to Britain in AD 122.', 
         'https://www.english-heritage.org.uk/visit/places/hadrians-wall/hadrians-wall-history-and-stories/history/#:~:text=It%20was%20built%20by%20the,on%2DSolway%20in%20the%20west.',
         'click for more info', 
         'hadrianswall'),
@@ -363,8 +363,8 @@ var cards = [
         'olympics'),
     
     new Card(1957,
-        'The Queens first Televised Christmas Speech', 
-        'The Queens Christmas Message is a broadcast made by the sovereign of the Commonwealth realms to the Commonwealth of Nations each Christmas.', 
+        'The Queen’s first televised Christmas Speech', 
+        'The Queen’s Christmas Message is a broadcast made by the sovereign of the Commonwealth realms to the Commonwealth of Nations each Christmas.', 
         'https://en.wikipedia.org/wiki/Royal_Christmas_Message',
         'click for more info', 
         'queenspeech'),
@@ -412,14 +412,14 @@ var cards = [
         'scott'),
     
          new Card(1983,
-        'The New £1 coin in introduced in Britain', 
+        'The old style £1 coin in introduced in Britain', 
         'The old style £1 coin was introduced in 1983 to replace the Bank of England £1 note, which remained in circulation alongside the coins until 1988. Many different reverse designs were used on the original £1 coin, alternating design themes each year for the UK, Scotland, Wales, Northern Ireland and England.', 
         'https://en.wikipedia.org/wiki/One_pound_(British_coin)',
         'click for more info', 
         'Oldonepound'),
 
         new Card(2017,
-        'The £1 coin in introduced in Britain', 
+        'The new style £1 coin in introduced in Britain', 
         'A new, dodecagonal (12-sided) design of coin was introduced on 28 March 2017 and both new and old versions of the one pound coin circulated together until the older design was withdrawn from circulation on 15 October 2017.', 
         'https://en.wikipedia.org/wiki/One_pound_(British_coin)',
         'click for more info', 
