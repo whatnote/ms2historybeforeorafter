@@ -109,7 +109,7 @@ function showCardeventonly(){
     + cards[count+1].image 
     + '.jpg" class="cardpic"><p>'    
     +cards[count+1].event+'</p>'
-    }
+}
 
 //deck of cards
 function Card(date, event, description, link, linkDisplay, image){
@@ -384,7 +384,7 @@ var cards = [
         'tunnel'),
     
     new Card(1973,
-        'Britain Joins EEC ', 
+        'Britain Joins EEC', 
         'The Accession of the United Kingdom to the European Communities (EC) – the collective term for the European Coal and Steel Community (ECSC), the European Economic Community (EEC) and the European Atomic Energy Community (EAEC) – took effect on 1 January 1973.', 
         'https://en.wikipedia.org/wiki/Accession_of_the_United_Kingdom_to_the_European_Communities',
         'click for more info', 
@@ -406,10 +406,10 @@ var cards = [
     
         new Card(1912,
         'Captain Scotts Expedition reaches the South Pole', 
-        'description',
-        'link',
+        'Robert Falcon Scott CVO (6 June 1868 – c. 29 March 1912) was a Royal Navy officer and explorer who led two expeditions to the Antarctic regions: the Discovery expedition of 1901–1904 and the ill-fated Terra Nova expedition of 1910–1913.',
+        'https://en.wikipedia.org/wiki/Robert_Falcon_Scott',
         'click for more info',
-        'picfilename'),
+        'scott'),
     
          new Card(1983,
         'The New £1 coin in introduced in Britain', 
