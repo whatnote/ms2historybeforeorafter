@@ -28,8 +28,8 @@ function gameStart() {
     
     }
 
-//highlow 
-function hilo(a){
+//before of After 
+function beforeAfter(a){
     var win = false;
     var oldCard = cards[count].date;
     count++;
@@ -98,6 +98,7 @@ function showCard(){
     +'</span></div>';      
 }
 
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup for the pop up
 function moreInfo() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
@@ -114,7 +115,7 @@ function showCardeventonly(){
     +cards[count+1].event+'</p>'
 }
 
-//deck of cards
+//deck of cards layout
 function Card(date, event, description, link, linkDisplay, image){
     this.date = date; 
     this.event = event;
@@ -124,7 +125,7 @@ function Card(date, event, description, link, linkDisplay, image){
     this.image = image;
 }
 
-//deck of cards
+//deck of cards with all info
 var cards = [
     new Card(
         1666,

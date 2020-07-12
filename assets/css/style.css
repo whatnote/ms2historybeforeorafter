@@ -87,7 +87,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 
 }
 
-/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup */
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup*/
 .popup {
   position: relative;
   display: inline-block;
@@ -98,7 +98,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
   user-select: none;
 }
 
-/* The actual popup */
+/*The actual popup */
 .popup .popuptext {
   visibility: hidden;
   width: 220px;
@@ -112,9 +112,9 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
   bottom: 125%;
   left: 50%;
   margin-left: -80px;
-}
+} 
 
-/* Popup arrow */
+/*Popup arrow */
 .popup .popuptext::after {
   content: "";
   position: absolute;
@@ -126,12 +126,13 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
   border-color: #555 transparent transparent transparent;
 }
 
-/* Toggle this class - hide and show the popup */
+/*Toggle this class - hide and show the popup */
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
-}
+} 
+
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
