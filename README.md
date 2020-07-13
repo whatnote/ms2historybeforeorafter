@@ -1,4 +1,3 @@
-# ms2historyhigherorlower
 <h1>Milestone 2 - History: Before or After</h1>
 
 <h2>Table of Contents</h2>
