@@ -69,6 +69,10 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     border: 1px solid #a5a5a5;    
 }
 
+.paragrapheight{
+    height: 27 px;
+}
+
 .scorecard{
     text-align: center;
     width: 90%;   
