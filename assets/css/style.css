@@ -69,10 +69,6 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     border: 1px solid #a5a5a5;    
 }
 
-.paragrapheight{
-    height: 27 px;
-}
-
 .scorecard{
     text-align: center;
     width: 90%;   
@@ -121,7 +117,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 /*Popup arrow */
 .popup .popuptext::after {
   content: "";
-  position: absolute;
+  position: relative;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -137,6 +133,79 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
   animation: fadeIn 1s;
 } 
 
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer{
+  position: relative;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+  position: ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #000;
+  border-radius: 5px;
+    border: 1px solid #a5a5a5;  
+    }
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+  position:absolute ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #a5a5a5;  
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1, .theback h1{
+  
+  text-align: center;
+}
+
+.thefront p, .theback p{
+  font-size: 12px;
+  text-align: center;
+}
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {

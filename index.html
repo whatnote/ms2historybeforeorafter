@@ -40,24 +40,31 @@
                 <div id="score"></div>
             </div>       
         </div>
-   
+ 
         <div class="row justify-content-center align-items-center">    
             
             <div class="col-m-5 justify-content-center">
                 <div class="historycard justify-content-center" id="cards"></div>
             </div>    
 
-            <div class="col-m-5 justify-content-center">
-                <div class="historycard justify-content-center" id="highLow"> 
-                    <div id="cardright"></div>
-                    <button id="btnlow" type="button" onclick="hilo('before')" class="btn1">Before</button><br>
-                    <button id="btnhigh" type="button" onclick="hilo('after')" class="btn1">After</button>  
+            <div class="col-m-5 justify-content-center historycard ">
+                <div class="maincontainer justify-content-center " id="highLow"> 
+                    
+                    <div class="thecard">
+                        <div class="thefront"> <h1>History:</h1> <h3>Before or After?</h3></div>
+                        <div class="theback">
+                            <div id="cardright"></div>
+                                <button id="btnlow" type="button" onclick="hilo('before')" class="btn1">Before</button><br>
+                                <button id="btnhigh" type="button" onclick="hilo('after')" class="btn1">After</button>  
+                        </div>
+                    </div>
+                    </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
       
-    </div>
 
 </div>
 

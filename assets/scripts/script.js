@@ -6,6 +6,7 @@ var cardOutput = document.getElementById('cards');
 var scoreOutput = document.getElementById('score');
 var cardOutputEvent = document.getElementById('cardright');
 
+
 //start game
 function gameStart() {
     count = 0
@@ -27,6 +28,8 @@ function gameStart() {
     document.getElementById('clearcards').style.display ='block';
     
     }
+
+
 
 //beforeAfternon function 
 function hilo(a){
@@ -83,7 +86,7 @@ function shuffleArray(array){
     console.log(array)
 }
 
-//dealing the cards
+//dealing the cards card on the left
 function showCard(){
     return '<div id="cardtodeleteleft"><img src="assets/css/images/' 
     + cards[count].image 
@@ -98,11 +101,13 @@ function showCard(){
     +'</span></div>';      
 }
 
+//popup for card link above.
 function moreInfo() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
 
+//
 
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup for the pop up
 
@@ -113,6 +118,10 @@ function showCardeventonly(){
     + '.jpg" class="cardpic"><p>'    
     +cards[count+1].event+'</p>'
 }
+
+
+
+
 
 //deck of cards
 function Card(date, event, description, link, linkDisplay, image){
