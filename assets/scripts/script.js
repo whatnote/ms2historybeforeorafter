@@ -18,7 +18,7 @@ function gameStart() {
     document.getElementById('start').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('cards').style.display = 'block';
-    
+ 
     shuffleArray(cards);
     cardOutput.innerHTML ="";
     cardOutput.innerHTML += showCard();

@@ -58,7 +58,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
         display: none;
  }
 
-.historycard{
+.historycardleft{
     text-align: center;
     width: 250px;
     height:300px ;
@@ -67,6 +67,15 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     background-color: #fafafa;
     border-radius: 5px;
     border: 1px solid #a5a5a5;    
+}
+
+.historycardright{
+    text-align: center;
+    width: 250px;
+    height:300px ;
+    margin: 5px;
+    padding: 5px;
+     
 }
 
 .scorecard{
@@ -89,122 +98,122 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup*/
 .popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /*The actual popup */
 .popup .popuptext {
-  visibility: hidden;
-  width: 220px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
 } 
 
 /*Popup arrow */
 .popup .popuptext::after {
-  content: "";
-  position: relative;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+    content: "";
+    position: relative;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
 }
 
 /*Toggle this class - hide and show the popup */
 .popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 } 
 
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
-  position: relative;
-  width: 250px;
-  height: 320px;
-  background: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
 .thecard{
-  position: ;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  transform-style: preserve-3d;
-  transition: all 0.8s ease;
+    position: ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
 }
 
 /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
 .thecard:hover{
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
- .thefront{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background: #fafafa;
-  color: #000;
-  border-radius: 5px;
+    .thefront{
+    position: relative;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #000;
+    border-radius: 5px;
     border: 1px solid #a5a5a5;  
     }
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
 .theback{
-  position:absolute ;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
- 
-  backface-visibility: hidden;
-  overflow: hidden;
-  background: #fafafa;
-  color: #333;
-  border-radius: 5px;
-  border: 1px solid #a5a5a5;  
-  text-align: center;
-  transform: rotateY(180deg);
+    position:absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #a5a5a5;  
+    text-align: center;
+    transform: rotateY(180deg);
 }
 
 
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
 .thefront h1, .theback h1{
   
-  text-align: center;
+    text-align: center;
 }
 
 .thefront p, .theback p{
-  font-size: 12px;
-  text-align: center;
+  font-size: 13px;
+  
 }
 
 /* Add animation (fade in the popup) */
