@@ -13,9 +13,10 @@ function gameStart() {
     score = 0
     moves = 10
 
-    message.innerHTML = "<h3>Game started!</h3>";
+    message.innerHTML = "<h3>Click the card to begin</h3>";
 
     document.getElementById('start').style.display = 'none';
+    document.getElementById('clearTitle').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('cards').style.display = 'block';
  
@@ -28,8 +29,6 @@ function gameStart() {
     document.getElementById('clearcards').style.display ='block';
     
     }
-
-
 
 //beforeAfternon function 
 function hilo(a){
