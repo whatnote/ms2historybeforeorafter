@@ -7,6 +7,8 @@ var scoreOutput = document.getElementById('score');
 var cardOutputEvent = document.getElementById('cardright');
 
 
+
+
 //start game
 function gameStart() {
     count = 0
