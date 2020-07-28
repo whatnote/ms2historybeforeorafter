@@ -6,9 +6,6 @@ var cardOutput = document.getElementById('cards');
 var scoreOutput = document.getElementById('score');
 var cardOutputEvent = document.getElementById('cardright');
 
-
-
-
 //start game
 function gameStart() {
     count = 0
@@ -21,6 +18,7 @@ function gameStart() {
     document.getElementById('clearTitle').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('cards').style.display = 'block';
+    
  
     shuffleArray(cards);
     cardOutput.innerHTML ="";
@@ -29,7 +27,6 @@ function gameStart() {
     cardOutputEvent.innerHTML ="";
     cardOutputEvent.innerHTML +=showCardeventonly();
     document.getElementById('clearcards').style.display ='block';
-    
     }
 
 //beforeAfternon function 
@@ -90,15 +87,15 @@ function shuffleArray(array){
 //dealing the cards card on the left
 function showCard(){
     return '<div id="cardtodeleteleft"><img src="assets/css/images/' 
-    + cards[count].image 
-    + '.jpg" class="cardpic"><p>'    
-    +cards[count].event+ '<br><br>'
+    +cards[count].image 
+    +'.jpg" class="cardpic"><p>'    
+    +cards[count].event+'<br><br>'
     +cards[count].date
     +'</p><div class="popup" onclick="moreInfo()">Click for more Info<span class="popuptext" id="myPopup">'
     +cards[count].description
     +'<br><a href="'
     + cards[count].link
-    +'" target="_blank">Link</a>'
+    +'"target="_blank">Link</a>'
     +'</span></div>';      
 }
 
