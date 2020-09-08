@@ -6,6 +6,9 @@ var cardOutput = document.getElementById('cards');
 var scoreOutput = document.getElementById('score');
 var cardOutputEvent = document.getElementById('cardright');
 
+
+highLow
+
 //start game
 function gameStart() {
     count = 0
@@ -17,6 +20,7 @@ function gameStart() {
     document.getElementById('start').style.display = 'none';
     document.getElementById('clearTitle').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
+    document.getElementById('highLowleft').style.display = 'block';
     document.getElementById('cards').style.display = 'block';
      
     shuffleArray(cards);

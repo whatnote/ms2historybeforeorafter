@@ -4,6 +4,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     font-family: 'Special Elite', 'Courier New', Courier, monospace;
     color:#555555;
 }
+highLow
 
 h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
      font-size: 13px;
@@ -55,6 +56,10 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
  }
 
  #cards{
+        display: none;
+ }
+
+#highLowleft{
         display: none;
  }
 
