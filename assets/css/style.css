@@ -7,7 +7,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 
 h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
      font-size: 13px;
- }
+    }
 
 .maintitle{
    width: 90%; 
@@ -16,9 +16,8 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 }
 
 .start {
-    margin-top: 10px;
-    
-    }
+    margin-top: 10px;    
+}
 
 .btn1a{
     border-radius: 5px;
@@ -49,6 +48,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     margin-top: 0px;
     
 }
+
 /*hides the high low buttons until game play starts. */
  #highLow{
         display: none;
@@ -59,14 +59,11 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
  }
 
 .historycardleft{
-    text-align: center;
+     text-align: center;
     width: 250px;
     height:300px ;
     margin: 5px;
     padding: 5px;
-    background-color: #fafafa;
-    border-radius: 5px;
-    border: 1px solid #a5a5a5;    
 }
 
 .historycardright{
@@ -74,8 +71,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     width: 250px;
     height:300px ;
     margin: 5px;
-    padding: 5px;
-     
+    padding: 5px;     
 }
 
 .scorecard{
@@ -93,7 +89,6 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     border-radius: 15px;
     height: 130px;
     padding: 10px;
-
 }
 
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup*/
@@ -151,12 +146,10 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
-.thecard{
-    
+.thecard{    
     top: 0;
     left: 0;
     width: 100%;
@@ -185,7 +178,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     color: #000;
     border-radius: 5px;
     border: 1px solid #a5a5a5;  
-    }
+}
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
 .theback{
@@ -206,14 +199,12 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 
 
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-.thefront h1, .theback h1{
-  
+.thefront h1, .theback h1{  
     text-align: center;
 }
 
 .thefront p, .theback p{
-  font-size: 13px;
-  
+  font-size: 13px;  
 }
 
 /* Add animation (fade in the popup) */

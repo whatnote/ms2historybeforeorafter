@@ -18,8 +18,7 @@ function gameStart() {
     document.getElementById('clearTitle').style.display = 'none';
     document.getElementById('highLow').style.display = 'block';
     document.getElementById('cards').style.display = 'block';
-    
- 
+     
     shuffleArray(cards);
     cardOutput.innerHTML ="";
     cardOutput.innerHTML += showCard();
@@ -28,6 +27,7 @@ function gameStart() {
     cardOutputEvent.innerHTML +=showCardeventonly();
     document.getElementById('clearcards').style.display ='block';
     }
+
 
 //beforeAfternon function 
 function hilo(a){
