@@ -15,7 +15,7 @@ function gameStart() {
     score = 0
     moves = 10
 
-    message.innerHTML = "<h3>Click the card to begin</h3>";
+    message.innerHTML = "<h3>Click on both cards to begin</h3>";
 
     document.getElementById('start').style.display = 'none';
     document.getElementById('clearTitle').style.display = 'none';
@@ -52,12 +52,12 @@ function hilo(a){
     if(a == 'after' && oldCard < newCard){win=true;}
     else if(a == 'before' && oldCard > newCard){win=true;}
     if(win){
-        message.innerHTML = "<h3>You Were Right!</h3>";
+        message.innerHTML = '<h3 class="fadeinout">You Were Right!</h3>';
         score++;
         moves--;
         if(moves<1){endPlay(); }           
         }else {
-            message.innerHTML = "<h3>You Were Wrong</h3>";
+            message.innerHTML = '<h3 class="fadeinout">You Were Wrong</h3>';
             moves--;
             if(moves<1){endPlay();
             }          

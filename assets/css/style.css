@@ -50,6 +50,38 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     
 }
 
+
+/*score indicatior fade in out*/
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.fadeinout{
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #F0A3BE;
+  animation-name: fadeInOut;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+
+
+
 /*hides the high low buttons until game play starts. */
  #highLow{
         display: none;
