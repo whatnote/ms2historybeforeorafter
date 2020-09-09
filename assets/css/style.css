@@ -69,16 +69,17 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 }
 
 .fadeinout{
-       z-index: 9;
-  font-size: 3.4rem;
-  position: absolute;
-  top: 10.5rem;
-  left: 10%;
-  opacity: 0;
-  color: #F0A3BE;
-  animation-name: fadeInOut;
-  animation-delay: 0s;
-  animation-duration: 5s;
+    z-index: 9;
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 10.5rem;
+    left: 10%;
+    opacity: 0;
+    color: #F0A3BE;
+    animation-name: fadeInOut;
+    animation-delay: 0s;
+    animation-duration: 5s;
 }
 
 
@@ -97,7 +98,8 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
  }
 
 .historycardleft{
-     text-align: center;
+    text-align: center;
+    
     width: 250px;
     height:300px ;
     margin: 5px;
@@ -142,7 +144,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 
 /*The actual popup */
 .popup .popuptext {
-    z-index: 9;
+    
     visibility: hidden;
     width: 220px;
     background-color: #555;
@@ -154,19 +156,20 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -110px;
 } 
 
 /*Popup arrow */
 .popup .popuptext::after {
     content: "";
-    position: relative;
+    position: absolute;
     top: 100%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
+    
 }
 
 /*Toggle this class - hide and show the popup */
@@ -176,7 +179,9 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     animation: fadeIn 1s;
 } 
 
-/* THE MAINCONTAINER HOLDS EVERYTHING */
+
+
+/* The FLip THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
     position: relative;
     width: 250px;
