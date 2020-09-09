@@ -15,7 +15,7 @@ function gameStart() {
     score = 0
     moves = 10
 
-    message.innerHTML = "<h3>Click on both cards to begin</h3>";
+    message.innerHTML = '<h3 class="fadeinout">Click on both cards to begin</h3>';
 
     document.getElementById('start').style.display = 'none';
     document.getElementById('clearTitle').style.display = 'none';

@@ -69,6 +69,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 }
 
 .fadeinout{
+       z-index: 9;
   font-size: 3.4rem;
   position: absolute;
   top: 10.5rem;
@@ -141,6 +142,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 
 /*The actual popup */
 .popup .popuptext {
+    z-index: 9;
     visibility: hidden;
     width: 220px;
     background-color: #555;
