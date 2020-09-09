@@ -263,6 +263,11 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 }
 
 @media screen and (min-width:600px){
+
+    .homescreen{
+        margin-top: 15%;
+    }
+
   .startcard{
     text-align: center;
     width: 50%;
