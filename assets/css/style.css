@@ -73,7 +73,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     font-size: 2rem;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 30%;
     width: 100%;
     opacity: 0;
     animation-name: fadeInOut;
@@ -82,8 +82,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 }
 
 .youareright{
-    color:green
-    
+    color:green    
 }
 
 .youarewrong{
@@ -190,9 +189,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     animation: fadeIn 1s;
 } 
 
-
-
-/* The FLip THE MAINCONTAINER HOLDS EVERYTHING */
+/* The FLip :THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
     position: relative;
     width: 250px;
@@ -218,6 +215,8 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 .thecard:hover{
     transform: rotateY(180deg);
 }
+
+
 
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
     .thefront{
@@ -250,6 +249,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     border: 1px solid #a5a5a5;  
     text-align: center;
     transform: rotateY(180deg);
+    
 }
 
 
@@ -301,5 +301,19 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
    padding-left: 5%;
    padding-right: 5%;
 }
+
+.fadeinout{
+    z-index: 9;
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    opacity: 0;
+    animation-name: fadeInOut;
+    animation-delay: 0s;
+    animation-duration: 5s;
+}
+
 
 }

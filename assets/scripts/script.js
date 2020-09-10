@@ -124,7 +124,6 @@ function showCardeventonly(){
 
 
 
-
 //deck of cards
 function Card(date, event, description, link, linkDisplay, image){
     this.date = date; 
