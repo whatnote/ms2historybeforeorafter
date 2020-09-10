@@ -4,7 +4,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     font-family: 'Special Elite', 'Courier New', Courier, monospace;
     color:#555555;
 }
-highLow
+
 
 h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
      font-size: 13px;
@@ -18,6 +18,10 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 
 .start {
     margin-top: 10px;    
+}
+
+.scoreplace{
+    margin-top: 15px;
 }
 
 .btn1a{
@@ -79,6 +83,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     animation-name: fadeInOut;
     animation-delay: 0s;
     animation-duration: 5s;
+    background-color: white;
 }
 
 .youareright{
@@ -90,8 +95,8 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 }
 
 .clicktobegin{
+    top: 30%;
     color:#555555
-
 }
 
 /*hides the high low buttons until game play starts. */
@@ -254,7 +259,8 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 
 
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-.thefront h1, .theback h1{  
+.thefront h1, .theback h1{
+    border-top: 30px;  
     text-align: center;
 }
 

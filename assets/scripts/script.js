@@ -26,7 +26,7 @@ function gameStart() {
     shuffleArray(cards);
     cardOutput.innerHTML ="";
     cardOutput.innerHTML += showCard();
-    scoreOutput.innerHTML = '<h3>Score: '+score+'</h3>';
+    scoreOutput.innerHTML = '<h3 class="scoreplace">Score: '+score+'</h3>';
     cardOutputEvent.innerHTML ="";
     cardOutputEvent.innerHTML +=showCardeventonly();
     document.getElementById('clearcards').style.display ='block';
@@ -57,7 +57,7 @@ function hilo(a){
         moves--;
         if(moves<1){endPlay(); }           
         }else {
-            message.innerHTML = '<h3 class="fadeinout youarewrong">You are Wrong!</h3>';
+            message.innerHTML = '<h3 class="fadeinout youarewrong">You were Wrong!</h3>';
             moves--;
             if(moves<1){endPlay();
             }          
