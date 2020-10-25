@@ -12,7 +12,7 @@ function gameStart() {
     score = 0
     moves = 10
 
-    message.innerHTML = '<h3 class="fadeinout clicktobegin">Click on both cards to begin</h3>';
+    message.innerHTML = '<h3 class="fadeinout clicktobegin">Click on any card to begin</h3>';
 
     document.getElementById('start').style.display = 'none';
     document.getElementById('clearTitle').style.display = 'none';
@@ -121,8 +121,8 @@ function showCardeventonly(){
 
 //rotating cards
 $(document).ready(function(){
-  $("button").click(function(){
-    $("h1, h2, p").toggleClass("blue");
+  $(".thefront, .flipback").click(function(){
+    $(".thecard").toggleClass("backflip");
   });
 });
 

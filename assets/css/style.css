@@ -222,11 +222,11 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     transition: all 0.8s ease;
 }
 
-/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT 
-.thecard:hover{
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.backflip{
     transform: rotateY(180deg);
 }
-*/
+
 
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
     .thefront{
