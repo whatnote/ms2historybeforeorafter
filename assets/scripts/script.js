@@ -6,9 +6,6 @@ var cardOutput = document.getElementById('cards');
 var scoreOutput = document.getElementById('score');
 var cardOutputEvent = document.getElementById('cardright');
 
-
-highLow
-
 //start game
 function gameStart() {
     count = 0
@@ -122,6 +119,12 @@ function showCardeventonly(){
 }
 
 
+//rotating cards
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1, h2, p").toggleClass("blue");
+  });
+});
 
 
 //deck of cards
