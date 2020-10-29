@@ -25,7 +25,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
 }
 
 .scoreplace{
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .btn1a{
@@ -303,7 +303,7 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     margin: 5%;
     padding: 5%;
     background-color: #fafafa;
-    border-radius: 15px;
+    border-radius: 10px;
     border-width: 2px;
     border: 1px solid #a5a5a5;
 }
