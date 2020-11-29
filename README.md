@@ -18,9 +18,6 @@
     - [Version Control](#Version-Control) 
 - [**Testing**](#Testing)
     - [Testing User Stories](#Testing-User-Stories)
-    - [Automated Testing](#Automated-Testing)
-        - [Run Jasmine Tests](#Run-Jasmine-Tests)
-        - [Create Jasmine Tests](#Create-Jasmine-Tests)
     - [Responsive Testing](#Responsive-Testing)
     - [Additional Testing](#Additional-Testing)
     - [HTML And CSS Validation](#HTML-And-CSS-Validation)
@@ -34,7 +31,7 @@
     - [Acknowledgements](#Acknowledgements)
     - [Disclaimer](#Disclaimer)
 
-### About
+## About
 
 This game is aimed at anyone who has an interest in History. The pub quizzer, child, parent, someone who wants to learn about history. 
 It’s a spin on the classic card game higher or lower; A fun way approach learning about history, you can just play the game; did a historical event happen before or after the preceding card. You can use your knowledge or just guess the year of the event. 
@@ -46,8 +43,61 @@ I created this game for the Interactive Frontend Development project. The projec
 
 There was a choice of three different projects. My weakest area of JavaScript was with understanding functions and how they can be called or passed to other functions. This was a major aspect of the **_Simon_** game project, so choosing this project would enable me to develop my weakest area. I learnt a lot during the course of the project, and it has definitely helped me to stregthen my weakest area.
 
-## #UX
+## UX
 
+### User-Stories
+### Research
+### Style-Rationale
+### Wireframes
+
+## Features
+
+### Functionality
+
+### Existing-Features
++ Deal button 
++ Deals 10 cards at random from a deck of 42 cards.
++ Each card contains:
+    -	a name of event 
+    -	A Picture of the event. 
+    -	Year of Event 
+    -	A more info button on each card, provides a short paragraph about the historical event.
+    -	In addition to the more info card a link to a website describes the event in even more detail. 
++	A Score bored
++	Compare your score against a benchmark of score
+
+#### Game-Controls
+### Features-Left-To-Implement
+## Technologies-Used
+
+[**Balsamiq**](https://balsamiq.com/)
+- Balsamiq was used to create wireframes of both the mobile phone and website before construction began.
+
+[HTML]()
+- HTML is used to create the landing webpage for my game.
+
+[CSS]()
+- The project uses CSS to apply the custom styles. The index.html file is linked directly to the main.css stylesheet.
+
+[Bootstrap]()
+- The project uses the Bootstrap framework to add a responsive grid system. I then layered my own css to customise the style. 
+
+[JavaScript]()
+- The project uses JavaScript from my custom script.js file to add functionality and interactivity to my game. This is the core focus of this project.
+
+
+
+### Version-Control
+## Testing
+### Testing-User-Stories
+### Responsive-Testing
+### Additional-Testing
+### HTML-And-CSS-Validation
+### Interesting-Bugs-Or-Problems
+## Deployment
+### Repository Link
+
+### Running-Code-Locally
 
 ### Credits 
 
