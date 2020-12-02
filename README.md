@@ -39,7 +39,7 @@ If the player wants to, they can then click for more info, where a short paragra
 
 ### Why This Project?
 
-I created this game for the Interactive Frontend Development project. The project scope was to create the game using HTML, CSS and JavaScript, with the core focus being the functional logic created with JavaScript.
+I created this game for the Interactive Frontend Development Project. The project scope was to create the game using HTML, CSS and JavaScript, with the core focus being the functional logic created with JavaScript.
 
 There was a choice of three different projects. My weakest area of JavaScript was with understanding functions and how they can be called or passed to other functions. This was a major aspect of the **_Simon_** game project, so choosing this project would enable me to develop my weakest area. I learnt a lot during the course of the project, and it has definitely helped me to stregthen my weakest area.
 
@@ -49,6 +49,9 @@ There was a choice of three different projects. My weakest area of JavaScript wa
 ### Research
 ### Style-Rationale
 ### Wireframes
+
+![Desktop Wire Frame](assets/css/images/desktophistoryhigherorlower.pdf)
+Format: ![Alt Text](url)
 
 ## Features
 
@@ -67,23 +70,48 @@ There was a choice of three different projects. My weakest area of JavaScript wa
 +	Compare your score against a benchmark of score
 
 #### Game-Controls
+
 ### Features-Left-To-Implement
+
++ Levels of play 
+    - Hard
+    - Medium
+    - Easy
+
+
 ## Technologies-Used
 
 [**Balsamiq**](https://balsamiq.com/)
 - Balsamiq was used to create wireframes of both the mobile phone and website before construction began.
 
-[HTML]()
+[**HTML**]()
 - HTML is used to create the landing webpage for my game.
 
-[CSS]()
+[**CSS**]()
 - The project uses CSS to apply the custom styles. The index.html file is linked directly to the main.css stylesheet.
 
-[Bootstrap]()
+[**Bootstrap**]()
 - The project uses the Bootstrap framework to add a responsive grid system. I then layered my own css to customise the style. 
 
-[JavaScript]()
+[**JavaScript**]()
 - The project uses JavaScript from my custom script.js file to add functionality and interactivity to my game. This is the core focus of this project.
+
+
+[**Google Fonts**]()
+- The project uses Google Fonts to style the text.
+
+[**Version Control**]()
+
+[**Git**]()
+- I've used Git as a version control system to regularly add and commit changes made to project in Cloud9, before pushing them to GitHub.
+
+[**GitHub**]()
+
+- I've used GitHub as a remote repository to push and store the committed changes to my project from Git. I've also used GitHub pages to deploy my website/app in a live environment.
+
+[**Trello**]()
+- Used to time manage the various steps in the project. 
+
 
 
 
