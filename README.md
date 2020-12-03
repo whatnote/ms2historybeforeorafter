@@ -45,13 +45,41 @@ There was a choice of three different projects. My weakest area of JavaScript wa
 
 ## UX
 
-### User-Stories
+### User Stories
+- I want a play button.
+- I want a large deck of cards.
+- I’d prefer not to have numerous war events.
+- I want the draw to be random.
+- I want short snappy game, no more than 10 cards in normal mode.
+- I want more that just the year of the event, more info and more information. 
+- I want a play again button.
+- I want a scoreboard.
+- I want to see how well I did compared against a “control”.
+
+
 ### Research
-### Style-Rationale
+This game is derived from the card game, higher or lower. I replaced the playing cards with history cards. 
+I looked at several higher or lower games via youtube and the wider web and almost all didn’t use playing cards, just numbers. I did find an Udemy course, that showed you how to make a high lower claim game using JavaScript. I found this invaluable as it showed you how to construct many of the elements needed to make the game. 
++ In particular:
+    - The shuffle
+    - Scoring system
+    - Scoring system
+    -   Number of turns. 
+A link to this course can be found [here](https://www.udemy.com/course/javascript-card-game/).
+
+
+### Style Rationale
+
+I wanted the game to resemble a deck of card and the appearance to look old, as if the cards have been used. With this I opted for a slightly of white colour for the background of the cards. 
+The text also had to look historical, the typewriter font helped finish off the look of the game. 
+The next step I wanted cards to rotate to reveal their information, I also wanted the additional historical to appear after the questions are answered. 
+
+
 ### Wireframes
 
-![Desktop Wire Frame](assets/css/images/desktophistoryhigherorlower.pdf)
-Format: ![Alt Text](url)
+[Desktop Wireframe ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/desktophistoryhigherorlower.pdf)
+
+[Mobile Wireframe](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Mobile%20History-higher%20or%20lower.pdf)
 
 ## Features
 
@@ -69,7 +97,14 @@ Format: ![Alt Text](url)
 +	A Score bored
 +	Compare your score against a benchmark of score
 
-#### Game-Controls
+### Game-Controls
+
+- A Play Button 
+- A Before of After button
+- A more info button 
+- A link for additional information
+- A play Again button
+
 
 ### Features-Left-To-Implement
 
