@@ -51,7 +51,8 @@ There was a choice of three different projects. My weakest area of JavaScript wa
 - I’d prefer not to have numerous war events.
 - I want the draw to be random.
 - I want short snappy game, no more than 10 cards in normal mode.
-- I want more that just the year of the event, more info and more information. 
+- I want levels of difficulty. 
+- I want more than just the year of the event, more info and more information. 
 - I want a play again button.
 - I want a scoreboard.
 - I want to see how well I did compared against a “control”.
@@ -64,8 +65,10 @@ I looked at several higher or lower games via youtube and the wider web and almo
     - The shuffle
     - Scoring system
     - Scoring system
-    -   Number of turns. 
+    - Number of turns. 
+
 A link to this course can be found [here](https://www.udemy.com/course/javascript-card-game/).
+
 
 
 ### Style Rationale
@@ -99,11 +102,13 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 
 ### Game-Controls
 
-- A Play Button 
-- A Before of After button
-- A more info button 
-- A link for additional information
-- A play Again button
+- home screen - this expains the game and how to play it. 
+- A Play Button - Stars the game. 
+- A Before of After button - These are your game controlers, pick the correct asswer and you'll score a point. 
+- A scoreboard - Points are logged here. 
+- A more info button - on the reveal card addation infomation is available about the event. 
+- A link for additional information - If you want to read even more about the subject this will take you to a link. 
+- A play again button - Take yuou back to the start of the game. 
 
 
 ### Features-Left-To-Implement
@@ -116,36 +121,46 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 
 ## Technologies-Used
 
-[**Balsamiq**](https://balsamiq.com/)
-- Balsamiq was used to create wireframes of both the mobile phone and website before construction began.
-
-[**HTML**]()
-- HTML is used to create the landing webpage for my game.
-
-[**CSS**]()
-- The project uses CSS to apply the custom styles. The index.html file is linked directly to the main.css stylesheet.
-
-[**Bootstrap**]()
-- The project uses the Bootstrap framework to add a responsive grid system. I then layered my own css to customise the style. 
-
-[**JavaScript**]()
-- The project uses JavaScript from my custom script.js file to add functionality and interactivity to my game. This is the core focus of this project.
-
-
-[**Google Fonts**]()
-- The project uses Google Fonts to style the text.
-
-[**Version Control**]()
-
-[**Git**]()
-- I've used Git as a version control system to regularly add and commit changes made to project in Cloud9, before pushing them to GitHub.
-
-[**GitHub**]()
-
-- I've used GitHub as a remote repository to push and store the committed changes to my project from Git. I've also used GitHub pages to deploy my website/app in a live environment.
-
-[**Trello**]()
+[**Trello**](https://trello.com/)
 - Used to time manage the various steps in the project. 
+
+[**Balsamiq**](https://balsamiq.com/)
+- Balsamiq was used to create wireframes of both the mobile and website before construction began.
+
+[**Gitpod**](https://gitpod.io/)
+- I used Gitpod to write my code. 
+
+[**Git**](https://git-scm.com/)
+- I've used Git version control system to regularly add and commit changes made to project in gitpod thn pushing them to GitHub.
+
+[**Google Fonts**](https://fonts.google.com/)
+- I used google fonts to style the text. 
+
+[**Bootstrap**](https://getbootstrap.com/)
+- I've used bootstrap to to assist with my layout. I've then used CSS to style same. 
+
+[**HTML**](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- HTML is used to create the landing page for my game.
+
+[**CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
+- The project uses CSS to apply style to my site. The style.css is link to the index.html.
+
+[**JavaScript**](https://www.javascript.com/)
+- The main focus of this project. script.js is linked to the index.html file. 
+
+[**jQuery**](https://jquery.com)
+- I use jQueryt for DOM manipulation in my project.
+
+
+
+
+## Version Control
+
+[**Git**](https://git-scm.com/)
+- Git was used to regularly commit changes made to my project. 
+
+[**GitHub**](https://github.com/)
+- Is used as my Repository.
 
 
 
@@ -157,6 +172,7 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 ### Additional-Testing
 ### HTML-And-CSS-Validation
 ### Interesting-Bugs-Or-Problems
+
 ## Deployment
 ### Repository Link
 
@@ -165,6 +181,19 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 ### Credits 
 
 ### Content
+
+- Most of the code was written by me, wher it's noot I've commented the url by the borrowed section of code. 
+
+- As mentioned above I did find an Udemy course, that showed you how to make a high lower claim game using JavaScript. I found this invaluable as it showed you how to construct many of the elements needed to make the game. 
++ In particular:
+    - The shuffle
+    - Scoring system
+    - Scoring system
+    - Number of turns. 
+
+    A link to this course can be found [here](https://www.udemy.com/course/javascript-card-game/). 
+
+- The game is clearly not an oringal idea but I would like to think my twist on it using historical events is.
 
 ### Media
 
@@ -259,4 +288,8 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 
 ### Acknowledgements
 
+A speceil thanks to my Mentor Anthony Ngene, for his patience. 
+
 ### Disclaimer
+
+This is an education only project. 
