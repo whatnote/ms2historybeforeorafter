@@ -165,7 +165,6 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 
 
 
-### Version-Control
 ## Testing
 ### Testing-User-Stories
 ### Responsive-Testing
@@ -174,9 +173,20 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 ### Interesting-Bugs-Or-Problems
 
 ## Deployment
+
 ### Repository Link
 
+To run the game in a live environment [click here](https://whatnote.github.io/ms2historybeforeorafter/)
+
+
+The link to my repository can be found via this link:
+[Link to Repository](https://github.com/whatnote/ms2historybeforeorafter)
+
+
 ### Running-Code-Locally
+
+
+
 
 ### Credits 
 
@@ -220,7 +230,7 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 
 [The Potato is brought to Britain.](https://en.wikipedia.org/wiki/History_of_the_potato)
 
-[Tea is first brought to the England]('https://www.tea.co.uk/history-of-tea')
+[Tea is first brought to the England](https://www.tea.co.uk/history-of-tea)
 
 [England wins the Football World Cup.](https://en.wikipedia.org/wiki/1966_FIFA_World_Cup)
 
