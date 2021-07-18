@@ -5,6 +5,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* this fixes the issue of the fix nav bad for the home section*/
+body {
+  margin-top: 50px;
+  margin-bottom: 6rem;
+}
+
 h1,
 h2,
 h3,
@@ -26,7 +32,15 @@ p,
 .btn1a,
 .popuptext,
 .popup {
-  font-size: 5rem;
+  font-size: 1.5rem;
+}
+
+#navname {
+  font-size: 2.5rem;
+}
+
+a {
+  font-size: 1rem;
 }
 
 .maintitle {
@@ -36,16 +50,16 @@ p,
 }
 
 .start {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .scoreplace {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .btn1a {
-  border-radius: 5px;
-  padding: 9px 10px;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
   color: #555555;
   display: inline-block;
   text-align: center;
@@ -56,8 +70,8 @@ p,
 
 .btn1,
 .popup {
-  border-radius: 5px;
-  padding: 9px 10px;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
   color: #555555;
   display: inline-block;
   text-align: center;
@@ -132,35 +146,35 @@ p,
 .historycardleft {
   text-align: center;
 
-  width: 250px;
-  height: 300px;
-  margin: 5px;
-  padding: 5px;
+  width: 25rem;
+  height: 30rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 .historycardright {
   text-align: center;
-  width: 250px;
-  height: 300px;
-  margin: 5px;
-  padding: 5px;
+  width: 25rem;
+  height: 30rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 .scorecard {
   text-align: center;
   width: 90%;
-  margin: 10px;
-  padding: 10px;
+  margin: 1rem;
+  padding: 1rem;
   background-color: #fafafa;
-  border-radius: 15px;
-  border-width: 2px;
+  border-radius: 1.5rem;
+  border-width: 0.2rem;
   border: 1px solid #a5a5a5;
 }
 
 .cardpic {
-  border-radius: 15px;
-  height: 130px;
-  padding: 10px;
+  border-radius: 1.5rem;
+  height: 13rem;
+  padding: 1rem;
 }
 
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup*/
@@ -177,12 +191,12 @@ p,
 /*The actual popup */
 .popup .popuptext {
   visibility: hidden;
-  width: 220px;
+  width: 22rem;
   background-color: #555;
   color: #fff;
   text-align: center;
-  border-radius: 5px;
-  padding: 8px 0;
+  border-radius: 0.5rem;
+  padding: 0.8rem 0;
   position: absolute;
   z-index: 1;
   bottom: 125%;
@@ -196,8 +210,8 @@ p,
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
+  margin-left: -0.5rem;
+  border-width: 0.5rem;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
@@ -212,8 +226,8 @@ p,
 /* The FLip :THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer {
   position: relative;
-  width: 250px;
-  height: 300px;
+  width: 25rem;
+  height: 30rem;
   background: none;
   top: 50%;
   left: 50%;
@@ -226,7 +240,7 @@ p,
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 1rem;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
 }
@@ -272,13 +286,13 @@ p,
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
 .thefront h1,
 .theback h1 {
-  border-top: 30px;
+  border-top: 3rem;
   text-align: center;
 }
 
 .thefront p,
 .theback p {
-  font-size: 13px;
+  font-size: 1.5rem;
 }
 
 /* Add animation (fade in the popup) */
@@ -311,13 +325,13 @@ li {
 }
 
 .social-networks i {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 
   color: #696666;
-  margin-bottom: -0.2rem;
+  margin-bottom: -2rem;
 }
 
 .ptext {
@@ -344,8 +358,8 @@ li {
   .startcard {
     text-align: center;
     width: 50%;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 1rem;
+    margin-top: 0.5rem;
   }
 
   .scorecard {
