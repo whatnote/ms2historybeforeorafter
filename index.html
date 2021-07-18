@@ -1,93 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>History Before or After</title>
-</head>
+  </head>
 
-<body>
-<div class="container-fluid homescreen">
-    <div class="row justify-content-center align-items-center start">
-        <div class="col-m-12 justify-content-center heading maintitle" id="clearTitle">
-            <h1>History:</h1> 
-            <h3>Before or After?</h3>
-        </div>
+  <body>
+    <div class="container-fluid">
+      <nav>
+            <!-- Nav Bar-->
+            <nav
+            class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"
+                ><img
+                  class="affinsize"
+                  src="assets/images/affin.jpg"
+                  alt="affinpinser"
+                />WaggyZpets Services</a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li
+                    class="nav-item"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    <a class="nav-link active" href="#home"
+                      >Home <span class="sr-only"></span
+                    ></a>
+                  </li>
+                  <li
+                    class="nav-item"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+    
+                  <li
+                    class="nav-item"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li
+                    class="nav-item"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                  </li>
+                  <li
+                    class="nav-item"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </div>
+    <div class="container-fluid homescreen">
+      <div class="row justify-content-center align-items-center start">
+        <div
+          class="col-m-12 justify-content-center heading maintitle"
+          id="clearTitle"
+        >
+          <h1>History:</h1>
+          <h3>Before or After?</h3>
+        </div>
+      </div>
 
-    <div class="row justify-content-center align-items-center" id="message">
-        <div class="col-m-12 justify-content-center heading startcard" >
-            <p>Welcome to History; Before or After!</p>
-            <p>Pitch your knowledge against 10 randomly generated historical events. All you have to do is answer "before" or "after" the preceeding event detailed on the card.</p>
-            <p>Want to know more information about the event, simply click on the more info button there even a link for even more info.</p>
-            <p>Best out of 10!</p>
-            <p>Good Luck!</p>
+      <div class="row justify-content-center align-items-center" id="message">
+        <div class="col-m-12 justify-content-center heading startcard">
+          <p>Welcome to History; Before or After!</p>
+          <p>
+            Pitch your knowledge against 10 randomly generated historical
+            events. All you have to do is answer "before" or "after" the
+            preceeding event detailed on the card.
+          </p>
+          <p>
+            Want to know more information about the event, simply click on the
+            more info button there even a link for even more info.
+          </p>
+          <p>Best out of 10!</p>
+          <p>Good Luck!</p>
         </div>
+      </div>
     </div>
-</div>
 
     <div class="row justify-content-center align-items-center" id="start">
-        <div class="col-m-12 justify-content-center heading">
-            <button id="btnstart" type="button" onclick="gameStart()" class="btn1a">Deal</button>
-        </div>       
+      <div class="col-m-12 justify-content-center heading">
+        <button id="btnstart" type="button" onclick="gameStart()" class="btn1a">
+          Deal
+        </button>
+      </div>
     </div>
 
     <div id="clearcards">
-        <div class="row justify-content-center align-items-center" id="start1">
-            <div class="col-m-12 justify-content-center">
-                <div id="score"></div>
-            </div>       
+      <div class="row justify-content-center align-items-center" id="start1">
+        <div class="col-m-12 justify-content-center">
+          <div id="score"></div>
         </div>
- 
-        <div class="row justify-content-center align-items-center" >    
-            
-            <div class="col-m-5 justify-content-center historycardleft">
-               
-                <div class=" maincontainer justify-content-center" id="highLowleft">
-                    <div class="thecard frontflip">
-                        <div class="thefront "> <h1>History:</h1> <h3>Before or After?</h3></div>
-                            <div class="theback">
-                                <div id="cards">
-                                </div>
-                            </div>
-                    </div>
-                </div>               
-            </div>    
+      </div>
 
-            <div class="col-m-5 justify-content-center historycardright">
-                <div class="maincontainer justify-content-center" id="highLow"> 
-                    
-                    <div class="thecard frontflip">
-                        <div class="thefront"> <h1>History:</h1> <h3>Before or After?</h3>
-                        </div>
-                            <div class="theback flipback">
-                                <div id="cardright"></div>
-                                    <button id="btnlow" type="button" onclick="hilo('before')" class="btn1">Before</button><br>
-                                    <button id="btnhigh" type="button" onclick="hilo('after')" class="btn1">After</button>  
-                            </div>                     
-                    </div>                  
-                </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-m-5 justify-content-center historycardleft">
+          <div class="maincontainer justify-content-center" id="highLowleft">
+            <div class="thecard frontflip">
+              <div class="thefront">
+                <h1>History:</h1>
+                <h3>Before or After?</h3>
+              </div>
+              <div class="theback">
+                <div id="cards"></div>
+              </div>
             </div>
+          </div>
         </div>
-      
 
-</div>
+        <div class="col-m-5 justify-content-center historycardright">
+          <div class="maincontainer justify-content-center" id="highLow">
+            <div class="thecard frontflip">
+              <div class="thefront">
+                <h1>History:</h1>
+                <h3>Before or After?</h3>
+              </div>
+              <div class="theback flipback">
+                <div id="cardright"></div>
+                <button
+                  id="btnlow"
+                  type="button"
+                  onclick="hilo('before')"
+                  class="btn1"
+                >
+                  Before</button
+                ><br />
+                <button
+                  id="btnhigh"
+                  type="button"
+                  onclick="hilo('after')"
+                  class="btn1"
+                >
+                  After
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <script src="assets/scripts/script.js"></script>
 
-     
-
-<script 
-
-src="assets/scripts/script.js"> 
-
-</script>
-</body>
-
-
+    <script>
+        src =
+          "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js";
+        integrity =
+          "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q";
+        crossorigin = "anonymous";
+      </script>
+  
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"
+      ></script>
+  </body>
 </html>
-
