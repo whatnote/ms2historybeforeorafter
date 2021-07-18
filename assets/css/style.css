@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Noto+Serif:wght@700&family=Special+Elite&display=swap" rel="stylesheet');
 
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -9,12 +14,8 @@ a,
 .btn1a,
 .popuptext,
 .popup {
-  font-family: "Special Elite", "Courier New", Courier, monospace;
+  font-family: "Special Elite", "Courier New";
   color: #555555;
-}
-
-.blue {
-  color: blue;
 }
 
 h1,
@@ -25,7 +26,7 @@ p,
 .btn1a,
 .popuptext,
 .popup {
-  font-size: 13px;
+  font-size: 5rem;
 }
 
 .maintitle {
