@@ -1,66 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Noto+Serif:wght@700&family=Special+Elite&display=swap" rel="stylesheet');
 
-h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
-    font-family: 'Special Elite', 'Courier New', Courier, monospace;
-    color:#555555;
+h1,
+h2,
+h3,
+p,
+a,
+.btn1,
+.btn1a,
+.popuptext,
+.popup {
+  font-family: "Special Elite", "Courier New", Courier, monospace;
+  color: #555555;
 }
-
 
 .blue {
   color: blue;
 }
 
-h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
-     font-size: 13px;
-    }
+h1,
+h2,
+h3,
+p,
+.btn1,
+.btn1a,
+.popuptext,
+.popup {
+  font-size: 13px;
+}
 
-.maintitle{
-   width: 90%; 
-   padding-left: 5%;
-   padding-right: 5%;
+.maintitle {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .start {
-    margin-top: 10px;    
+  margin-top: 10px;
 }
 
-.scoreplace{
-    margin-top: 10px;
+.scoreplace {
+  margin-top: 10px;
 }
 
-.btn1a{
-    border-radius: 5px;
-    padding:9px 10px;
-    color:#555555;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    border: 1px solid #555555;
-    margin-top: 5px;
+.btn1a {
+  border-radius: 5px;
+  padding: 9px 10px;
+  color: #555555;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #555555;
+  margin-top: 5px;
 }
 
-.btn1, .popup{
-    border-radius: 5px;
-    padding:9px 10px;
-    color:#555555;
-    display: inline-block;
-    text-align: center;
-    width: 60%;
-    border: 1px solid #555555;
-    margin-top: 5px;   
+.btn1,
+.popup {
+  border-radius: 5px;
+  padding: 9px 10px;
+  color: #555555;
+  display: inline-block;
+  text-align: center;
+  width: 60%;
+  border: 1px solid #555555;
+  margin-top: 5px;
 }
 
-.startcard{
-    text-align: center;
-    width: 90%;
-    padding: 5px;
-    margin-top: 0px;
-    
+.startcard {
+  text-align: center;
+  width: 90%;
+  padding: 5px;
+  margin-top: 0px;
 }
-
 
 /*score indicatior fade in out*/
-
 
 @keyframes fadeInOut {
   0% {
@@ -76,244 +88,282 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
   }
 }
 
-.fadeinout{
-    z-index: 9;
-    font-size: 2rem;
-    text-align: center;
-    position: absolute;
-    top: 5%;
-    width: 100%;
-    opacity: 0;
-    animation-name: fadeInOut;
-    animation-delay: 0s;
-    animation-duration: 5s;
-    background-color: white;
+.fadeinout {
+  z-index: 9;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  opacity: 0;
+  animation-name: fadeInOut;
+  animation-delay: 0s;
+  animation-duration: 5s;
+  background-color: white;
 }
 
-
-
-.youareright{
-    color:green    
+.youareright {
+  color: green;
 }
 
-.youarewrong{
-    color:red;
+.youarewrong {
+  color: red;
 }
 
-.clicktobegin{
-    top: 30%;
-    color:#555555
+.clicktobegin {
+  top: 30%;
+  color: #555555;
 }
 
 /*hides the high low buttons until game play starts. */
- #highLow{
-        display: none;
- }
-
- #cards{
-        display: none;
- }
-
-#highLowleft{
-        display: none;
- }
-
-.historycardleft{
-    text-align: center;
-    
-    width: 250px;
-    height:300px ;
-    margin: 5px;
-    padding: 5px;
+#highLow {
+  display: none;
 }
 
-.historycardright{
-    text-align: center;
-    width: 250px;
-    height:300px ;
-    margin: 5px;
-    padding: 5px;     
+#cards {
+  display: none;
 }
 
-.scorecard{
-    text-align: center;
-    width: 90%;   
-    margin: 10px;
-    padding: 10px;
-    background-color: #fafafa;
-    border-radius: 15px;
-    border-width: 2px;
-    border: 1px solid #a5a5a5;
+#highLowleft {
+  display: none;
 }
 
-.cardpic{
-    border-radius: 15px;
-    height: 130px;
-    padding: 10px;
+.historycardleft {
+  text-align: center;
+
+  width: 250px;
+  height: 300px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.historycardright {
+  text-align: center;
+  width: 250px;
+  height: 300px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.scorecard {
+  text-align: center;
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  border-width: 2px;
+  border: 1px solid #a5a5a5;
+}
+
+.cardpic {
+  border-radius: 15px;
+  height: 130px;
+  padding: 10px;
 }
 
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup*/
 .popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /*The actual popup */
 .popup .popuptext {
-    
-    visibility: hidden;
-    width: 220px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -110px;
-} 
+  visibility: hidden;
+  width: 220px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -110px;
+}
 
 /*Popup arrow */
 .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-    
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 
 /*Toggle this class - hide and show the popup */
 .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-} 
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
 
 /* The FLip :THE MAINCONTAINER HOLDS EVERYTHING */
-.maincontainer{
-    position: relative;
-    width: 250px;
-    height: 300px;
-    background: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.maincontainer {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
-.thecard{    
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    transform-style: preserve-3d;
-    transition: all 0.8s ease;
+.thecard {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
 }
 
 /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
-.backflip{
-    transform: rotateY(180deg);
+.backflip {
+  transform: rotateY(180deg);
 }
 
-
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
-    .thefront{
-    position: relative;
-    text-align: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    overflow: hidden;
-    background: #fafafa;
-    color: #000;
-    border-radius: 5px;
-    border: 1px solid #a5a5a5;  
+.thefront {
+  position: relative;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid #a5a5a5;
 }
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
-.theback{
-    position:absolute ;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    overflow: hidden;
-    background: #fafafa;
-    color: #333;
-    border-radius: 5px;
-    border: 1px solid #a5a5a5;  
-    text-align: center;
-    transform: rotateY(180deg);
-    
+.theback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #a5a5a5;
+  text-align: center;
+  transform: rotateY(180deg);
 }
-
 
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-.thefront h1, .theback h1{
-    border-top: 30px;  
-    text-align: center;
+.thefront h1,
+.theback h1 {
+  border-top: 30px;
+  text-align: center;
 }
 
-.thefront p, .theback p{
-  font-size: 13px;  
+.thefront p,
+.theback p {
+  font-size: 13px;
 }
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@media screen and (min-width:600px){
+/*footer styling*/
+.social-networks {
+  text-align: center;
+}
 
-    .homescreen{
-        margin-top: 15%;
-    }
+.social-networks,
+li {
+  display: inline;
+}
 
-  .startcard{
+.social-networks i {
+  font-size: 2.5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1rem;
+
+  color: #696666;
+  margin-bottom: -0.2rem;
+}
+
+.ptext {
+  color: #696666;
+  text-align: center;
+  font-family: "karla", "sans-serif";
+  font-size: 1.5rem;
+}
+
+.makerlink {
+  color: black;
+  text-align: center;
+  font-family: "karla", "sans-serif";
+  font-size: 1.5rem;
+}
+
+/*media queries*/
+
+@media screen and (min-width: 600px) {
+  .homescreen {
+    margin-top: 15%;
+  }
+
+  .startcard {
     text-align: center;
     width: 50%;
     padding: 10px;
     margin-top: 5px;
-}
+  }
 
-.scorecard{
+  .scorecard {
     text-align: center;
-    width: 50%;   
+    width: 50%;
     margin: 5%;
     padding: 5%;
     background-color: #fafafa;
     border-radius: 10px;
     border-width: 2px;
     border: 1px solid #a5a5a5;
-}
-.maintitle{
-   width: 50%; 
-   padding-left: 5%;
-   padding-right: 5%;
-}
+  }
+  .maintitle {
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-.fadeinout{
+  .fadeinout {
     z-index: 9;
     font-size: 2rem;
     text-align: center;
@@ -324,7 +374,5 @@ h1, h2, h3, p, .btn1, .btn1a, .popuptext, .popup {
     animation-name: fadeInOut;
     animation-delay: 0s;
     animation-duration: 5s;
-}
-
-
+  }
 }
