@@ -87,6 +87,15 @@
                   <div class="thefront">
                     <h1>History:</h1>
                     <h3>Before or After?</h3>
+                    <div class="center-form">
+                      <form onsubmit="return sendMail(this);">
+                          <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                          <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                          <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Historical Event" required></textarea>
+                          <button type="submit" class="btn btn-secondary center-block">Send Event</button>
+                      </form>
+                  </div>
+
                   </div>
                   <div class="theback">
                     <div id="cards"></div>
@@ -95,6 +104,7 @@
               </div>
             </div>
     </div>
+
 
     <!-- social meadia footer-->
     <footer class="fixed-bottom bg-light">

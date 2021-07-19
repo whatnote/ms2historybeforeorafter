@@ -7,8 +7,7 @@ html {
 
 /* this fixes the issue of the fix nav bad for the home section*/
 body {
-  margin-top: 50px;
-  margin-bottom: 6rem;
+  padding-top: 5rem;
 }
 
 h1,
@@ -40,7 +39,7 @@ p,
 }
 
 a {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .maintitle {
@@ -351,6 +350,10 @@ li {
 /*media queries*/
 
 @media screen and (min-width: 600px) {
+  .body {
+    padding-bottom: 5rem;
+  }
+
   .homescreen {
     margin-top: 15%;
   }
