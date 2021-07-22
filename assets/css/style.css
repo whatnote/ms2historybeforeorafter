@@ -356,7 +356,7 @@ li {
   font-size: 1.5rem;
 }
 
-/**/
+/*add card page*/
 .addcardtext {
   text-align: center;
 
@@ -379,6 +379,10 @@ li {
 /*media queries*/
 
 @media screen and (min-width: 600px) {
+  html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+  }
   .body {
     padding-bottom: 5rem;
   }
@@ -392,6 +396,21 @@ li {
     width: 50%;
     padding: 1rem;
     margin-top: 0.5rem;
+  }
+
+  .youareright {
+    top: 25%;
+    color: green;
+  }
+
+  .youarewrong {
+    top: 25%;
+    color: red;
+  }
+
+  .clicktobegin {
+    top: 25git add;
+    color: #555555;
   }
 
   .scorecard {
