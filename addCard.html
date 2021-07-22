@@ -97,18 +97,20 @@
         <div>
 
           <div class="row justify-content-center align-items-center">
-            <div class="col-m-5 justify-content-center historycardleft">
+            <div class="col-m-5 justify-content-center addcardtext">
               <div class="maincontainer justify-content-center">
-                <div class="thecard">
+                <div>
                    
-                    <h1>Add an Historical Event</h1>
+                    <h2>Add an <br>Historical Event</h2>
+                    <p>If you would like to see an historical event added to the deck, please feel free to suggest one via the form below. </p>
+                    <p>As soon as it's added I'll let you know so you can play again and keep an eye out for your card!</p>
                     
                     <div class="center-form">
                       <form onsubmit="return sendMail(this);">
-                          <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-                          <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-                          <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Historical Event" required></textarea>
-                          <button type="submit" class="btn btn-secondary center-block">Send Event</button>
+                          <input type="text" name="name" class="form-control form-text" id="fullname" placeholder="Name" required/>
+                          <input type="text" name="emailaddress" class="form-control form-text" id="emailaddress" placeholder="Email" required/>
+                          <textarea rows="5" name="projectsummary" class="form-control form-text" id="projectsummary" placeholder="Historical Event" required></textarea>
+                          <button type="submit" class="btn btn-secondary center-block form-text">Send Event</button>
                       </form>
                   </div>
 

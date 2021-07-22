@@ -18,20 +18,27 @@ a,
 .btn1,
 .btn1a,
 .popuptext,
-.popup {
+.popup,
+.form-text {
   font-family: "Special Elite", "Courier New";
   color: #555555;
 }
 
-h1,
+h1 {
+  font-size: 1.8rem;
+}
+
 h2,
 h3,
 p,
 .btn1,
-.btn1a,
+.btn1a {
+  font-size: 1.6rem;
+}
+
 .popuptext,
 .popup {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 #navname {
@@ -39,7 +46,7 @@ p,
 }
 
 a {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .maintitle {
@@ -58,7 +65,7 @@ a {
 
 .btn1a {
   border-radius: 0.5rem;
-  padding: 1rem 1rem;
+  padding: 0.5rem 0.5rem;
   color: #555555;
   display: inline-block;
   text-align: center;
@@ -70,7 +77,7 @@ a {
 .btn1,
 .popup {
   border-radius: 0.5rem;
-  padding: 1rem 1rem;
+  padding: 0.5rem 0.5rem;
   color: #555555;
   display: inline-block;
   text-align: center;
@@ -117,15 +124,17 @@ a {
 }
 
 .youareright {
+  top: 8%;
   color: green;
 }
 
 .youarewrong {
+  top: 8%;
   color: red;
 }
 
 .clicktobegin {
-  top: 30%;
+  top: 8%;
   color: #555555;
 }
 
@@ -146,7 +155,7 @@ a {
   text-align: center;
 
   width: 25rem;
-  height: 30rem;
+  height: 27rem;
   margin: 0.5rem;
   padding: 0.5rem;
 }
@@ -154,7 +163,7 @@ a {
 .historycardright {
   text-align: center;
   width: 25rem;
-  height: 30rem;
+  height: 27rem;
   margin: 0.5rem;
   padding: 0.5rem;
 }
@@ -172,7 +181,7 @@ a {
 
 .cardpic {
   border-radius: 1.5rem;
-  height: 13rem;
+  height: 11rem;
   padding: 1rem;
 }
 
@@ -195,7 +204,7 @@ a {
   color: #fff;
   text-align: center;
   border-radius: 0.5rem;
-  padding: 0.8rem 0;
+  padding: 0.8rem 0.4rem;
   position: absolute;
   z-index: 1;
   bottom: 125%;
@@ -226,7 +235,7 @@ a {
 .maincontainer {
   position: relative;
   width: 25rem;
-  height: 30rem;
+  height: 27rem;
   background: none;
   top: 50%;
   left: 50%;
@@ -321,6 +330,7 @@ a {
 .social-networks,
 li {
   display: inline;
+  margin-bottom: -0.3rem;
 }
 
 .social-networks i {
@@ -328,23 +338,42 @@ li {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 0.5rem;
-
   color: #696666;
-  margin-bottom: -2rem;
+  margin-bottom: 0.1rem;
 }
 
 .ptext {
   color: #696666;
   text-align: center;
-  font-family: "karla", "sans-serif";
+  font-family: "Special Elite", "Courier New";
   font-size: 1.5rem;
 }
 
 .makerlink {
   color: black;
   text-align: center;
-  font-family: "karla", "sans-serif";
+  font-family: "Special Elite", "Courier New";
   font-size: 1.5rem;
+}
+
+/**/
+.addcardtext {
+  text-align: center;
+
+  width: 25rem;
+  height: 27rem;
+  margin: 0.7rem;
+  padding: 0.5rem;
+
+  text-align: center;
+  width: 90%;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+/* form styling*/
+.form-text {
+  margin: 0.8rem;
 }
 
 /*media queries*/
