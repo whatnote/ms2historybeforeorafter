@@ -1,6 +1,6 @@
 ![Picture of deployed project ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/WriteUpPics/historyBeoreOrAfter.png)
 
-# [History Before or After](https://whatnote.github.io/ms2historybeforeorafter/) - Milestone Project Two
+# [History: Before or After](https://whatnote.github.io/ms2historybeforeorafter/) - Milestone Project Two
 
 ## Table of Contents
 
@@ -8,7 +8,7 @@
 - [**UX**](#UX)
   - [User Stories](#User-Stories)
   - [Research](#Research)
-  - [Style Rationale](#Style-Rationale)
+  - [Styling](#Styling)
   - [Wireframes](#Wireframes)
 - [**Features**](#Features)
   - [Functionality](#Functionality)
@@ -66,7 +66,7 @@ I looked at several higher or lower games via youtube and the wider web and almo
 
 A link to this course can be found [here](https://www.udemy.com/course/javascript-card-game/).
 
-### Style Rationale
+### Styling
 
 I wanted the game to resemble a deck of card and the appearance to look old, as if the cards have been used. With this I opted for a slightly of white colour for the background of the cards.
 The text also had to look historical, the typewriter font helped finish off the look of the game.
@@ -92,6 +92,7 @@ The next step I wanted cards to rotate to reveal their information, I also wante
   - In addition to the more info card a link to a website describes the event in even more detail.
 - A Score bored
 - Compare your score against a benchmark of score
+- Add card
 
 ### Game-Controls
 
@@ -321,7 +322,7 @@ The link to my repository can be found via this link:
 
 ### Acknowledgements
 
-A speceil thanks to my Mentor Anthony Ngene, for his patience.
+A special thanks to my Mentor Spencer Barriball for his guidance in the project. I also need to thank my partner Chrissy and my Daughter Abbey-Rae for allowing me a great many hours in front of the computer.
 
 ### Disclaimer
 
