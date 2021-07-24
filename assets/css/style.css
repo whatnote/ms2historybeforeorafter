@@ -380,15 +380,15 @@ li {
 
 @media screen and (min-width: 600px) {
   html {
-    font-size: 15px;
+    font-size: 12px;
     scroll-behavior: smooth;
   }
-  .body {
-    padding-bottom: 5rem;
+  body {
+    padding-top: 5rem;
   }
 
   .homescreen {
-    margin-top: 15%;
+    margin-top: 7.5%;
   }
 
   .startcard {
@@ -399,17 +399,17 @@ li {
   }
 
   .youareright {
-    top: 25%;
+    margin-top: 4rem;
     color: green;
   }
 
   .youarewrong {
-    top: 25%;
+    margin-top: 4rem;
     color: red;
   }
 
   .clicktobegin {
-    top: 25git add;
+    margin-top: 4rem;
     color: #555555;
   }
 
