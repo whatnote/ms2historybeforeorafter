@@ -1,4 +1,4 @@
-[Picture of deployed project ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/desktophistoryhigherorlower.pdf)
+[Picture of deployed project ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/WriteUpPics/historyBeoreOrAfter.png)
 
 # [History Before or After](https://whatnote.github.io/ms2historybeforeorafter/) - Milestone Project Two
 
