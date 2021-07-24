@@ -1,4 +1,4 @@
-[Picture of deployed project ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/WriteUpPics/historyBeoreOrAfter.png)
+![Picture of deployed project ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/WriteUpPics/historyBeoreOrAfter.png)
 
 # [History Before or After](https://whatnote.github.io/ms2historybeforeorafter/) - Milestone Project Two
 
@@ -74,9 +74,9 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 
 ### Wireframes
 
-[Desktop Wireframe ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/desktophistoryhigherorlower.pdf)
+![Desktop Wireframe ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/desktophistoryhigherorlower.pdf)
 
-[Mobile Wireframe](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Mobile%20History-higher%20or%20lower.pdf)
+![Mobile Wireframe](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Mobile%20History-higher%20or%20lower.pdf)
 
 ## Features
 
