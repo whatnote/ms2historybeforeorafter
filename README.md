@@ -74,7 +74,15 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 
 ### Wireframes
 
-![Desktop Wireframe ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/desktophistoryhigherorlower.pdf)
+![Desktop Home Screen ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Desktop%20Home%20Screen.png)
+
+![Desktop Play Screen ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Desktop%20Play%20Screen.png)
+
+![Desktop Game Play ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Desktop%20when%20you%20press%20higher%20or%20-lower.png)
+
+![Desktop End Game ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Desktop%20End%20of%20play.png)
+
+![Desktop Add Card ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Desktop%20Add%20Card.png)
 
 ![Mobile Wireframe](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Mobile%20History-higher%20or%20lower.pdf)
 
