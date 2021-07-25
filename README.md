@@ -218,14 +218,13 @@ The link to my repository can be found via this link:
 
 ### Content
 
-- Most of the code was written by me, wher it's noot I've commented the url by the borrowed section of code.
+- Most of the code was written by me, where it's not I've commented the url by the borrowed section of code.
 
 - As mentioned above I did find an Udemy course, that showed you how to make a high lower claim game using JavaScript. I found this invaluable as it showed you how to construct many of the elements needed to make the game.
 
 * In particular:
 
   - The shuffle
-  - Scoring system
   - Scoring system
   - Number of turns.
 
