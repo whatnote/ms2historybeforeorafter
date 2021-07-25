@@ -209,7 +209,7 @@ If this section grows too long, you may want to split it off into a separate fil
 
 The deck consists of 42 cards, more can be added with the add card page.
 
-- I’d prefer not to have numerous war events.
+- I’d prefer not to have war events.
 
 No War events included.
 
@@ -217,11 +217,14 @@ No War events included.
 
 Using the math function the array is shuffled at random at the start of every game.
 
+![JS math](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/WriteUpPics/shuffle.png)
+
 - I want short snappy game, no more than 10 cards in normal mode.
 
 Game in completed in 10 moves.
 
 - I want more than just the year of the event, more info and more information.
+  ![More Info button](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/WriteUpPics/addCard.png)
 
 - I want a play again button.
 
@@ -229,9 +232,11 @@ Play again button.
 
 - I want a scoreboard.
 
-Scoreboard at the top of the page shows teh current score
+Scoreboard at the top of the page shows the current score
 
 - I want to be able to request a new card is added to the deck.
+
+![New Card](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/WriteUpPics/addCard.png)
 
 ### Responsive-Testing
 
