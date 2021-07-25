@@ -51,7 +51,7 @@ If the player wants to, they can then click for more info, where a short paragra
 - I want more than just the year of the event, more info and more information.
 - I want a play again button.
 - I want a scoreboard.
-- I want to be able to request a new card.
+- I want to be able to request a new card is added to the deck.
 
 ### Research
 
@@ -108,7 +108,7 @@ The next step I wanted cards to rotate to reveal their information, I also wante
   - In addition to the more info card a link to a website describes the event in even more detail.
 - A Score bored
 - Compare your score against a benchmark of score
-- Add card
+- Add card - a separate page that allows users to suggest a new card to be added to teh deck.
 
 ### Game-Controls
 
@@ -122,7 +122,7 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 
 ### Features-Left-To-Implement
 
-- Levels of play
+- I want levels of difficulty.
   - Hard
   - Medium
   - Easy
@@ -202,6 +202,37 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ### Testing-User-Stories
 
+- I want a play button.
+  ![Desktop Home Screen ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Desktop%20Home%20Screen.png)
+
+- I want a large deck of cards.
+
+The deck consists of 42 cards, more can be added with the add card page.
+
+- I’d prefer not to have numerous war events.
+
+No War events included.
+
+- I want the draw to be random.
+
+Using the math function the array is shuffled at random at the start of every game.
+
+- I want short snappy game, no more than 10 cards in normal mode.
+
+Game in completed in 10 moves.
+
+- I want more than just the year of the event, more info and more information.
+
+- I want a play again button.
+
+Play again button.
+
+- I want a scoreboard.
+
+Scoreboard at the top of the page shows teh current score
+
+- I want to be able to request a new card is added to the deck.
+
 ### Responsive-Testing
 
 ### Additional-Testing
@@ -220,6 +251,20 @@ I used the website. https://jigsaw.w3.org/css-validator/, to check the code for 
 Not a bug, as such but something that took me far too long to work out!
 
 ## Deployment
+
+Gitpod was used to devleoped the site, with progress being comitted to git via the terminal.
+
+### Deployment of Page
+
+- Log onto GitHub
+- Go to the “repositories” section
+- Click: ms2historybeforeorafter
+- Click on "settings" located in the right handside, sort of in the middle of the screen.
+- Click on “Pages” on the left handside menu
+- Under “Source”, select “Master” in the first tab
+- In the next tab, select “/root” if not already selected by default
+- Click “Save” and the url should be displayed above the "source" section
+- Now that the link is displayed, the website is deployed and can be accessed in the browser by clicking on the url
 
 ### Repository Link
 

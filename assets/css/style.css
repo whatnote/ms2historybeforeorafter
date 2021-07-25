@@ -203,8 +203,8 @@ a {
   background-color: #555;
   color: #fff;
   text-align: center;
-  border-radius: 0.5rem;
-  padding: 0.8rem 0.4rem;
+  border-radius: 5px;
+  padding: 8px 4px;
   position: absolute;
   z-index: 1;
   bottom: 125%;
@@ -218,8 +218,8 @@ a {
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -0.5rem;
-  border-width: 0.5rem;
+  margin-left: -5px;
+  border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
