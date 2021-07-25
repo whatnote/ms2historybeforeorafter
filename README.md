@@ -233,7 +233,7 @@ To test the add card form Iwent to the card form and loaded my deatils.
 
 I entered my details pressed send and then checked my email for the message.
 
-#### Testing the Add Card Tab
+![EmailJS Test](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/WriteUpPics/emailJStest.png)
 
 ### HTML-And-CSS-Validation
 
