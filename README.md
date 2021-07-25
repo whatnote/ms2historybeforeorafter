@@ -221,6 +221,10 @@ Scoreboard at the top of the page shows the current score
 
 The wibesite was set up as a mbile first wesite, the game type meant that hte cards only had to be above and below each other to work on mobile.
 
+#### Web Browser and DEvice Testing
+
+![Web Browser and DEvices Testing](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/WriteUpPics/devices%20and%20webbrowser%20tests.png)
+
 ### Additional-Testing
 
 #### Add Card Form.
