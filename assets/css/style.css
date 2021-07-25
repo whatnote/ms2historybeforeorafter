@@ -291,6 +291,34 @@ a {
   transform: rotateY(180deg);
 }
 
+.thefront,
+.theback {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*potential safri fix*/
+
+/*  UPDATED! front pane, placed above back */
+.thefront {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.theback {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
 .thefront h1,
 .theback h1 {

@@ -219,7 +219,7 @@ Scoreboard at the top of the page shows the current score
 
 ### Responsive-Testing
 
-The site was set up as a mbile first wesite, the game type meant that hte cards only had to be above and below each other to work on mobile.
+The wibesite was set up as a mbile first wesite, the game type meant that hte cards only had to be above and below each other to work on mobile.
 
 ### Additional-Testing
 
@@ -242,7 +242,9 @@ I used the website. https://jigsaw.w3.org/css-validator/, to check the code for 
 
 ### Interesting-Bugs-Or-Problems
 
-Not a bug, as such but something that took me far too long to work out!
+Not a bug as such, but something that took me far too long to work out! It was getting the card below/right of the question top/left to display as the second card in the array, it was a very easy fix in the end, I should have asked somebody...
+
+Simply all I had to do was change count to count++ and that as that.
 
 ## Deployment
 
