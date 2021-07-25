@@ -86,9 +86,9 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 
 ![Mobile Home Screen ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Mobile%20Home%20Screen.png)
 
-![Mobile Play Screen ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Mobile%20Play%20Screen.png)
+![Mobile Play Screen ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Mobile%20start%20of%20game.png)
 
-![Mobile Game Play ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Mobile%20when%20you%20press%20higher%20or%20-lower.png)
+![Mobile Game Play ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Mobile%20once%20higher%20or%20lower%20is%20clicked.png)
 
 ![Mobile End Game ](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/wireframes/Mobile%20End%20of%20play.png)
 
