@@ -452,7 +452,7 @@ var cards = [
 ];
 
 
-//add card contact data
+//add card contact data lifted from the Resume project from code institute
 
 function sendMail(contactForm) {
     emailjs.send("default_service", "danielcv", {

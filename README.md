@@ -66,6 +66,8 @@ I looked at several higher or lower games via youtube and the wider web and almo
 
 A link to this course can be found [here](https://www.udemy.com/course/javascript-card-game/).
 
+I switched the idea from higher or lower to before or after as this fitted better with the content of the game, did an event happen before or after the previous event.
+
 ### Styling
 
 I wanted the game to resemble a deck of card and the appearance to look old, as if the cards have been used. With this I opted for a slightly of white colour for the background of the cards.
@@ -179,25 +181,6 @@ The next step I wanted cards to rotate to reveal their information, I also wante
 
 - Is used as my Repository.
 
-Testing
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to
-go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
 ## Testing
 
 ### Testing-User-Stories
@@ -224,7 +207,7 @@ Using the math function the array is shuffled at random at the start of every ga
 Game in completed in 10 moves.
 
 - I want more than just the year of the event, more info and more information.
-  ![More Info button](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/WriteUpPics/addCard.png)
+  ![More Info button](https://github.com/whatnote/ms2historybeforeorafter/blob/master/assets/WriteUpPics/moreInfo.png)
 
 - I want a play again button.
 
@@ -240,7 +223,17 @@ Scoreboard at the top of the page shows the current score
 
 ### Responsive-Testing
 
+The site was set up as a mbile first wesite, the game type meant that hte cards only had to be above and below each other to work on mobile.
+
 ### Additional-Testing
+
+#### Add Card Form.
+
+To test the add card form Iwent to the card form and loaded my deatils.
+
+I entered my details pressed send and then checked my email for the message.
+
+#### Testing the Add Card Tab
 
 ### HTML-And-CSS-Validation
 
@@ -279,6 +272,13 @@ The link to my repository can be found via this link:
 [Link to Repository](https://github.com/whatnote/ms2historybeforeorafter)
 
 ### Running-Code-Locally
+
+- Navigate to the GitHub Repository
+- Click the Code drop down menu.
+- Click the clipboard icon to copy the URL provided
+- Open your preferred development editor the open a terminal window in a directory you like.
+- Use "git clone" and paste the copied URL after it.
+- A clone of the project will be created locally on your machine.
 
 ### Credits
 
