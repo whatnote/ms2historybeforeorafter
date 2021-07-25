@@ -371,6 +371,17 @@ li {
   margin-top: 0px;
 }
 
+.textcontainer {
+  margin-top: 3rem;
+  position: relative;
+  width: 25rem;
+  height: 27rem;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* form styling*/
 .form-text {
   margin: 0.8rem;
